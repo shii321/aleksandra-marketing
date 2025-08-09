@@ -1,0 +1,516 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a !important;
+            color: #ffffff !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+            line-height: 1.6;
+            overflow-x: hidden !important;
+            padding-top: 80px;
+        }
+
+        /* ======================== ФИКСИРОВАННОЕ МЕНЮ ======================== */
+        .navigation {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 1000 !important;
+            background: rgba(26, 26, 26, 0.95) !important;
+            backdrop-filter: blur(15px) !important;
+            padding: 15px 30px !important;
+            transition: all 0.3s ease !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .nav-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            position: relative !important;
+            gap: 20px !important;
+        }
+
+        /* ======================== DESKTOP МЕНЮ ======================== */
+        .nav-menu {
+            display: flex !important;
+            align-items: center !important;
+            gap: 25px !important;
+            flex: 1 !important;
+            justify-content: center !important;
+            min-width: 0 !important;
+            flex-shrink: 1 !important;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            position: relative !important;
+            padding: 8px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.3s ease !important;
+            white-space: nowrap !important;
+        }
+
+        .nav-link:hover {
+            color: #00F260 !important;
+            text-shadow: 0 0 8px rgba(0, 242, 96, 0.6) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        .nav-link.active {
+            color: #00F260 !important;
+            text-shadow: 0 0 8px rgba(0, 242, 96, 0.6) !important;
+        }
+
+        /* Desktop Services Dropdown */
+        .services-dropdown-desktop {
+            position: relative !important;
+        }
+
+        .services-toggle-desktop {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            cursor: pointer !important;
+            color: #ffffff !important;
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            padding: 8px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .services-toggle-desktop:hover {
+            color: #00F260 !important;
+            text-shadow: 0 0 8px rgba(0, 242, 96, 0.6) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        .services-dropdown-menu {
+            position: absolute !important;
+            top: 100% !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            min-width: 220px !important;
+            background: rgba(26, 26, 26, 0.98) !important;
+            backdrop-filter: blur(20px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 12px !important;
+            padding: 8px !important;
+            margin-top: 10px !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transform: translateX(-50%) translateY(-10px) !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .services-dropdown-desktop:hover .services-dropdown-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateX(-50%) translateY(0) !important;
+        }
+
+        .services-dropdown-menu a {
+            display: block !important;
+            color: #cccccc !important;
+            text-decoration: none !important;
+            padding: 10px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.3s ease !important;
+            font-size: 15px !important;
+        }
+
+        .services-dropdown-menu a:hover {
+            color: #00F260 !important;
+            background: rgba(0, 242, 96, 0.1) !important;
+            transform: translateX(5px) !important;
+        }
+
+        /* SOCIAL LINKS В DESKTOP */
+        .nav-social {
+            display: flex !important;
+            gap: 12px !important;
+            align-items: center !important;
+            flex-shrink: 0 !important;
+        }
+
+        .social-link {
+            width: 35px !important;
+            height: 35px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 50% !important;
+            transition: all 0.3s ease !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            flex-shrink: 0 !important;
+        }
+
+        .social-link:hover {
+            background: rgba(0, 242, 96, 0.2) !important;
+            border-color: #00F260 !important;
+            transform: translateY(-2px) scale(1.1) !important;
+            box-shadow: 0 4px 15px rgba(0, 242, 96, 0.3) !important;
+        }
+
+        .social-link svg {
+            width: 18px !important;
+            height: 18px !important;
+        }
+
+        /* ======================== МОБИЛЬНОЕ МЕНЮ ======================== */
+        .mobile-menu-toggle {
+            display: none !important;
+            background: transparent !important;
+            border: 2px solid #ffffff !important;
+            border-radius: 8px !important;
+            padding: 8px !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            flex-shrink: 0 !important;
+        }
+
+        .mobile-menu-toggle:hover {
+            border-color: #00F260 !important;
+        }
+
+        .hamburger {
+            width: 24px !important;
+            height: 18px !important;
+            position: relative !important;
+        }
+
+        .hamburger span {
+            display: block !important;
+            width: 100% !important;
+            height: 2px !important;
+            background: #ffffff !important;
+            margin: 4px 0 !important;
+            transition: all 0.3s ease !important;
+            border-radius: 2px !important;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px) !important;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0 !important;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px) !important;
+        }
+
+        /* МОБИЛЬНОЕ ВЫПАДАЮЩЕЕ МЕНЮ */
+        .mobile-menu {
+            position: fixed !important;
+            top: 0 !important;
+            right: -100% !important;
+            width: 73% !important;
+            height: 100vh !important;
+            background: #1a1a1a !important;
+            backdrop-filter: blur(20px) !important;
+            border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+            z-index: 1001 !important;
+            transition: right 0.4s ease !important;
+            overflow-y: auto !important;
+            padding: 25px !important;
+        }
+
+        .mobile-menu.active {
+            right: 0 !important;
+        }
+
+        .mobile-nav-links {
+            margin-top: 20px !important;
+        }
+
+        .mobile-nav-link {
+            display: block !important;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            font-size: 18px !important;
+            font-weight: 500 !important;
+            padding: 15px 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .mobile-nav-link:hover {
+            color: #00F260 !important;
+            padding-left: 10px !important;
+        }
+
+        .mobile-nav-link.active {
+            color: #00F260 !important;
+        }
+
+        /* SERVICES DROPDOWN В МОБИЛЬНОМ */
+        .services-dropdown {
+            margin-top: 10px !important;
+            margin-left: 15px !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            transition: max-height 0.3s ease !important;
+        }
+
+        .services-dropdown.active {
+            max-height: 600px !important;
+        }
+
+        .services-toggle {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            cursor: pointer !important;
+        }
+
+        .services-arrow {
+            transition: transform 0.3s ease !important;
+            color: #999999 !important;
+        }
+
+        .services-arrow.active {
+            transform: rotate(180deg) !important;
+            color: #00F260 !important;
+        }
+
+        .dropdown-item {
+            display: block !important;
+            color: #999999 !important;
+            text-decoration: none !important;
+            font-size: 14px !important;
+            padding: 8px 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .dropdown-item:hover {
+            color: #00F260 !important;
+            padding-left: 5px !important;
+        }
+
+        /* МОБИЛЬНЫЕ SOCIAL LINKS */
+        .mobile-social {
+            margin-top: 40px !important;
+            padding-top: 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .mobile-social-title {
+            color: #ffffff !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            margin-bottom: 20px !important;
+        }
+
+        .mobile-social-links {
+            display: flex !important;
+            gap: 15px !important;
+            flex-wrap: wrap !important;
+        }
+
+        .mobile-social-link {
+            width: 45px !important;
+            height: 45px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-radius: 50% !important;
+            transition: all 0.3s ease !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        }
+
+        .mobile-social-link:hover {
+            background: rgba(0, 242, 96, 0.2) !important;
+            border-color: #00F260 !important;
+            transform: scale(1.1) !important;
+        }
+
+        .mobile-social-link svg {
+            width: 22px !important;
+            height: 22px !important;
+        }
+
+        /* КОНТАКТЫ В МОБИЛЬНОМ */
+        .mobile-contacts {
+            margin-top: 30px !important;
+            padding-top: 25px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .mobile-contacts-title {
+            color: #ffffff !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            margin-bottom: 15px !important;
+        }
+
+        .mobile-contact-item {
+            display: block !important;
+            color: #999999 !important;
+            text-decoration: none !important;
+            font-size: 14px !important;
+            padding: 8px 0 !important;
+            transition: color 0.3s ease !important;
+        }
+
+        .mobile-contact-item:hover {
+            color: #00F260 !important;
+        }
+
+        /* OVERLAY */
+        .mobile-overlay {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: rgba(0, 0, 0, 0.7) !important;
+            backdrop-filter: blur(5px) !important;
+            z-index: 999 !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .mobile-overlay.active {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        /* ======================== УЛУЧШЕННАЯ АДАПТИВНОСТЬ ======================== */
+
+        /* Большие экраны */
+        @media (min-width: 1200px) {
+            .nav-menu {
+                gap: 40px !important;
+            }
+            
+            .nav-social {
+                gap: 15px !important;
+            }
+        }
+
+        /* Средние экраны */
+        @media (max-width: 1199px) and (min-width: 901px) {
+            .nav-menu {
+                gap: 20px !important;
+            }
+            
+            .nav-link {
+                padding: 8px 12px !important;
+                font-size: 15px !important;
+            }
+            
+            .nav-social {
+                gap: 10px !important;
+            }
+            
+            .social-link {
+                width: 32px !important;
+                height: 32px !important;
+            }
+            
+            .social-link svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+
+        /* Планшеты */
+        @media (max-width: 900px) and (min-width: 769px) {
+            .navigation {
+                padding: 12px 15px !important;
+            }
+            
+            .nav-container {
+                gap: 15px !important;
+            }
+            
+            .nav-menu {
+                gap: 12px !important;
+            }
+            
+            .nav-link {
+                padding: 6px 8px !important;
+                font-size: 14px !important;
+            }
+            
+            .nav-social {
+                gap: 6px !important;
+            }
+            
+            .social-link {
+                width: 26px !important;
+                height: 26px !important;
+            }
+            
+            .social-link svg {
+                width: 13px !important;
+                height: 13px !important;
+            }
+        }
+
+        /* Мобильные устройства */
+        @media (max-width: 768px) {
+            .navigation {
+                padding: 12px 20px !important;
+            }
+
+            .nav-menu,
+            .nav-social {
+                display: none !important;
+            }
+
+            .mobile-menu-toggle {
+                display: block !important;
+            }
+
+            body {
+                padding-top: 70px !important;
+            }
+        }
+
+        /* Очень маленькие экраны */
+        @media (max-width: 480px) {
+            .mobile-menu {
+                width: 83% !important;
+                padding: 20px !important;
+            }
+
+            .mobile-nav-links {
+                margin-top: 15px !important;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .mobile-menu {
+                width: 93% !important;
+                padding: 15px !important;
+            }
+
+            .mobile-nav-links {
+                margin-top: 10px !important;
+            }
+        }
+
+        /* ======================== ПЛАВНАЯ ПРОКРУТКА ======================== */
+        html {
+            scroll-behavior: smooth !important;
+        }
+

@@ -2199,6 +2199,17 @@ body {
         margin: 0 !important;
         border-radius: 6px !important;
         border-width: 1px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    .case-card > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     
     .cases-title {
@@ -2210,7 +2221,8 @@ body {
     .case-logo {
         width: 35px !important;
         height: 35px !important;
-        margin-bottom: 5px !important;
+        margin: 0 auto 5px auto !important;
+        display: block !important;
     }
     
     .case-company {
