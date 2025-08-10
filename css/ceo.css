@@ -1354,7 +1354,7 @@ body {
     color: #00F260;
     transform: translateX(3px);
 }
-
+ 
 .other-link:hover::before {
     width: 100%;
 }
