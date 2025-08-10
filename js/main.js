@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
          // ============ CONFIGURATION ============
         // Replace with your Google Apps Script URL
-        const GOOGLE_APPS_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw3RKsY_2nn8zVOjiKfilWUkvqPs_oSnH3OaI7Fj8oP3li_AEwkkSt67QVy9LQrGn2CTQ/exec';
 
         // Calculator Data
         let calculatorData = {
