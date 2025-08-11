@@ -2161,86 +2161,82 @@ body {
         font-size: 12px;
     }
     
-    /* Portfolio Section Mobile */
-    #portfolio {
-        scroll-margin-top: 60px;
-    }
+    /* ======================== ИСПРАВЛЕННЫЙ ПОРТФОЛИО ДЛЯ МОБИЛЬНЫХ ======================== */
     
-    .cases-section {
-        padding: 30px 0px !important;
-        margin: 0 !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        position: relative !important;
-        left: 50% !important;
-        right: 50% !important;
-        margin-left: -50vw !important;
-        margin-right: -50vw !important;
-    }
-    
-    .cases-section * {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    .cases-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+        padding: 0 10px;
     }
     
     .cases-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 2px !important;
-        margin: 0 !important;
-        padding: 0 2px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Оставляем 3 колонки */
+        gap: 15px; /* Немного увеличим зазор для аккуратности */
+        padding: 0 15px;
     }
     
     .case-card {
-        padding: 5px 2px !important;
-        margin: 0 !important;
-        border-radius: 6px !important;
-        border-width: 1px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
+        background: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 12px;
+        padding: 15px 10px;
+        text-align: center;
+        
+        /* --- Ключевые исправления --- */
+        display: flex; /* Включаем Flexbox */
+        flex-direction: column; /* Элементы идут друг под другом */
+        justify-content: space-between; /* Растаскиваем контент по вертикали */
     }
     
+    /* Управляем контейнером внутри карточки */
     .case-card > div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-    }
-    
-    .cases-title {
-        font-size: 36px !important;
-        margin-bottom: 20px !important;
-        padding: 0 10px !important;
+        flex-grow: 1; /* Позволяем этому блоку расти */
     }
     
     .case-logo {
-        width: 35px !important;
-        height: 35px !important;
-        margin: 0 auto 5px auto !important;
-        display: block !important;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
     }
     
     .case-company {
-        font-size: 12px !important;
-        margin-bottom: 3px !important;
-        font-weight: 700 !important;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        line-height: 1.2;
+    }
+    
+    .case-industry, .case-position {
+        font-size: 11px;
+        color: #999999;
+        margin-bottom: 8px;
+        line-height: 1.3;
     }
     
     .case-preview {
-        font-size: 9px !important;
-        line-height: 1.2 !important;
-        margin-bottom: 0px !important;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #ffffff;
+        margin-bottom: 10px;
+        
+        /* --- Ключевые исправления --- */
+        flex-grow: 1; /* Заставляем описание занимать все свободное место */
     }
     
     .case-more {
-        font-size: 11px !important;
-        margin-top: 0px !important;
-        line-height: 1 !important;
+        font-size: 16px;
+        color: #999999;
+        margin-top: auto; /* Прижимаем многоточие к низу */
+        padding-top: 5px;
+    }
+    
+    /* Скрываем ненужные элементы на мобильных */
+    .case-industry, .case-position {
+        display: none;
     }
     
     /* Modal Mobile */
@@ -2379,24 +2375,18 @@ body {
         text-align: center;
     }
 
-    .footer-left {
-        align-items: center;
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        justify-self: center;
     }
 
     .footer-subtitle {
         max-width: none;
     }
 
-    .footer-right {
-        align-items: center;
-    }
-
     .social-grid {
         justify-content: center;
-    }
-
-    .footer-services {
-        text-align: center;
     }
 }
 
@@ -2422,4 +2412,3 @@ body {
 }
 
 .footer-copyright { color: #999999 !important; }
-
