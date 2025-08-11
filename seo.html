@@ -501,5 +501,55 @@
 
 
     <script src="js/ceo.js"></script>
+
+    <script>
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (link && link.href) {
+    // Instagram
+    if (link.href.includes('instagram.com')) {
+      gtag('event', 'social_click', {
+        'social_network': 'instagram'
+      });
+    }
+    // Facebook
+    else if (link.href.includes('facebook.com')) {
+      gtag('event', 'social_click', {
+        'social_network': 'facebook'
+      });
+    }
+    // WhatsApp
+    else if (link.href.includes('wa.me')) {
+      gtag('event', 'social_click', {
+        'social_network': 'whatsapp'
+      });
+    }
+    // Telegram
+    else if (link.href.includes('t.me')) {
+      gtag('event', 'social_click', {
+        'social_network': 'telegram'
+      });
+    }
+    // Line
+    else if (link.href.includes('line.me')) {
+      gtag('event', 'social_click', {
+        'social_network': 'line'
+      });
+    }
+    // Email
+    else if (link.href.includes('mailto:')) {
+      gtag('event', 'contact_click', {
+        'contact_type': 'email'
+      });
+    }
+    // Phone
+    else if (link.href.includes('tel:')) {
+      gtag('event', 'contact_click', {
+        'contact_type': 'phone'
+      });
+    }
+  }
+});
+</script>
 </body>
 </html>
