@@ -1,8 +1,12 @@
-
+/* ======================== ОБЩИЕ СТИЛИ ======================== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth !important;
         }
 
         body {
@@ -584,26 +588,7 @@
             }
         }
 
-        /* ======================== ПЛАВНАЯ ПРОКРУТКА ======================== */
-        html {
-            scroll-behavior: smooth !important;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1a1a;
-            color: #ffffff;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        /* Hero Section */
+        /* ======================== HERO SECTION ======================== */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -635,7 +620,8 @@
             color: #ffffff;
         }
 
-        .hero-content h1 .gradient {
+        .hero-content h1 .gradient,
+        .gradient {
             background: linear-gradient(135deg, #00F260, #0575E6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -830,20 +816,7 @@
             }
         }
 
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
+        /* ======================== STRATEGIES SECTION ======================== */
         .strategies-section {
             background-color: #1a1a1a;
             padding: 80px 20px;
@@ -861,13 +834,6 @@
                 0 0 10px rgba(255, 255, 255, 0.5),
                 0 0 20px rgba(255, 255, 255, 0.3),
                 0 0 30px rgba(255, 255, 255, 0.2);
-        }
-
-        .strategies-title .gradient {
-            background: linear-gradient(135deg, #00F260, #0575E6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .strategies-grid {
@@ -1167,20 +1133,7 @@
             }
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1a1a;
-            color: #ffffff;
-            line-height: 1.6;
-            padding: 2rem 0;
-        }
-
+        /* ======================== FAQ SECTION ======================== */
         .faq-section {
             padding: 5rem 2rem;
             max-width: 800px;
@@ -1306,18 +1259,8 @@
                 padding: 0 1.5rem 1.2rem;
             }
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1a1a;
-            color: #ffffff;
-        }
-
+        /* ======================== TALK BLOCK ======================== */
         .talk-block {
             padding: 0;
             margin: 0;
@@ -1349,20 +1292,7 @@
             }
         }
 
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* Compact Footer */
+        /* ======================== FOOTER ======================== */
         .footer {
             background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
             border-top: 1px solid #333;
@@ -1443,7 +1373,8 @@
             margin-bottom: 15px;
         }
 
-        .social-link {
+        /* Footer Social Links - Override main social-link styles */
+        .footer .social-link {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1459,7 +1390,7 @@
             overflow: hidden;
         }
 
-        .social-link::before {
+        .footer .social-link::before {
             content: '';
             position: absolute;
             top: 0;
@@ -1470,17 +1401,17 @@
             transition: left 0.5s;
         }
 
-        .social-link:hover {
+        .footer .social-link:hover {
             transform: translateY(-2px);
             border-color: #00F260;
             box-shadow: 0 8px 25px rgba(0, 242, 96, 0.2);
         }
 
-        .social-link:hover::before {
+        .footer .social-link:hover::before {
             left: 100%;
         }
 
-        .social-link svg {
+        .footer .social-link svg {
             width: 22px;
             height: 22px;
             transition: all 0.3s;
@@ -1656,12 +1587,12 @@
                 font-size: 1.3rem;
             }
 
-            .social-link {
+            .footer .social-link {
                 width: 45px;
                 height: 45px;
             }
 
-            .social-link svg {
+            .footer .social-link svg {
                 width: 20px;
                 height: 20px;
             }
@@ -1688,9 +1619,8 @@
                 gap: 10px;
             }
 
-            .social-link {
+            .footer .social-link {
                 width: 42px;
                 height: 42px;
             }
         }
-

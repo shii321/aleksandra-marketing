@@ -1282,3 +1282,16 @@ body {
     .social-grid { gap: 10px; }
     .footer .social-link { width: 42px !important; height: 42px !important; }
 }
+
+ .footer-legal a {
+    text-decoration: none;
+    color: #999999 !important; /* <-- Задаем серый цвет и используем !important */
+    transition: color 0.3s ease; /* <-- Плавный переход цвета для красоты */
+}
+
+/* Этот блок исправляет работу наведения мыши */
+.footer-legal a:hover {
+    color: #00F260 !important; /* <-- Добавляем !important, чтобы перебить общее правило */
+}
+
+.footer-copyright { color: #999999 !important; }

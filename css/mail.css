@@ -12,6 +12,7 @@
             line-height: 1.6;
             overflow-x: hidden !important;
             padding-top: 80px;
+        
         }
 
         /* ======================== ФИКСИРОВАННОЕ МЕНЮ ======================== */
@@ -1363,16 +1364,20 @@
             background-color: #1a1a1a;
             color: #ffffff;
             line-height: 1.6;
+            padding: 0;
         }
 
         /* Compact Footer */
         .footer {
             background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
             border-top: 1px solid #333;
-            padding: 40px 20px 0;
             position: relative;
             margin: 0 !important;
             width: 100%;
+            padding: 60px 40px 40px 40px;
+    
+    /* ДОБАВЬТЕ ЭТУ СТРОКУ */
+    margin-top: auto;
         }
 
         .footer::before {
@@ -1696,6 +1701,20 @@
                 height: 42px;
             }
         }
+
+        .footer-legal a {
+    text-decoration: none;
+    color: #999999 !important; /* <-- Задаем серый цвет и используем !important */
+    transition: color 0.3s ease; /* <-- Плавный переход цвета для красоты */
+}
+
+/* Этот блок исправляет работу наведения мыши */
+.footer-legal a:hover {
+    color: #00F260 !important; /* <-- Добавляем !important, чтобы перебить общее правило */
+}
+
+.footer-copyright { color: #999999 !important; }
+
 
         
 

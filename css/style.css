@@ -1529,7 +1529,7 @@ body {
     margin: 0 auto 10px;
 }
 
-/* ======================== FOOTER ======================== */
+/* ======================== FOOTER (ИЗМЕНЕНО) ======================== */
 .footer {
     background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
     border-top: 1px solid #333;
@@ -1647,6 +1647,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    justify-self: end; /* <-- ДОБАВЛЕНО: Это свойство сдвигает колонку вправо */
 }
 
 .footer-services {
@@ -2398,3 +2399,27 @@ body {
         text-align: center;
     }
 }
+
+/* Этот блок добавляет отступы и центрирует ссылки */
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* <-- Увеличиваем расстояние между ссылками */
+    margin-top: 10px; /* <-- Добавляем отступ от копирайта сверху */
+    flex-wrap: wrap; /* <-- Перенос на новую строку на маленьких экранах */
+}
+
+/* Этот блок задает стили для самих ссылок */
+.footer-legal a {
+    text-decoration: none;
+    color: #999999 !important; /* <-- Задаем серый цвет и используем !important */
+    transition: color 0.3s ease; /* <-- Плавный переход цвета для красоты */
+}
+
+/* Этот блок исправляет работу наведения мыши */
+.footer-legal a:hover {
+    color: #00F260 !important; /* <-- Добавляем !important, чтобы перебить общее правило */
+}
+
+.footer-copyright { color: #999999 !important; }
+

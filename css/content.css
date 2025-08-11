@@ -1083,4 +1083,27 @@ body {
     .mobile-nav-links { margin-top: 10px !important; }
     .mobile-social-link { width: calc(20% - 1px) !important; }
     .mobile-social-link svg { max-width: 16px !important; max-height: 16px !important; }
+} 
+
+/* Этот блок добавляет отступы и центрирует ссылки */
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* <-- Увеличиваем расстояние между ссылками */
+    margin-top: 10px; /* <-- Добавляем отступ от копирайта сверху */
+    flex-wrap: wrap; /* <-- Перенос на новую строку на маленьких экранах */
 }
+
+/* Этот блок задает стили для самих ссылок */
+.footer-legal a {
+    text-decoration: none;
+    color: #999999 !important; /* <-- Задаем серый цвет и используем !important */
+    transition: color 0.3s ease; /* <-- Плавный переход цвета для красоты */
+}
+
+/* Этот блок исправляет работу наведения мыши */
+.footer-legal a:hover {
+    color: #00F260 !important; /* <-- Добавляем !important, чтобы перебить общее правило */
+}
+
+.footer-copyright { color: #999999 !important; }
