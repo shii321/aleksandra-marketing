@@ -1,5 +1,4 @@
-
-        // ======================== MOBILE MENU FUNCTIONS ========================
+// ======================== MOBILE MENU FUNCTIONS ========================
         function toggleMobileMenu() {
             const mobileMenu = document.querySelector('.mobile-menu');
             const overlay = document.querySelector('.mobile-overlay');
@@ -118,8 +117,8 @@
         });
 
         function updateCountdown() {
-            // Дата окончания: 1 сентября 2025, 00:00:00
-            const endDate = new Date('2025-09-01T00:00:00').getTime();
+            // Дата окончания: 1 октября 2025, 00:00:00
+            const endDate = new Date('2025-10-01T00:00:00').getTime();
             const now = new Date().getTime();
             const timeLeft = endDate - now;
 
@@ -556,7 +555,3 @@
                 }
             }
         });
-
-        
-
-
