@@ -118,30 +118,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ======================== COUNTDOWN TIMER ========================
 function updateCountdown() {
-    const COUNTDOWN_DAYS = 15; // Количество дней для отсчета
-    const STORAGE_KEY = 'countdownEndDate';
+    const COUNTDOWN_DAYS = 15;
     
-    // Получаем или создаем дату окончания
-    let endDate = localStorage.getItem(STORAGE_KEY);
-    
-    if (!endDate) {
-        // Если даты нет, создаем новую (текущее время + 15 дней)
+    // Используем переменную в памяти вместо localStorage
+    if (!window.countdownEndDate) {
         const now = new Date();
-        const newEndDate = new Date(now.getTime() + COUNTDOWN_DAYS * 24 * 60 * 60 * 1000);
-        endDate = newEndDate.getTime();
-        localStorage.setItem(STORAGE_KEY, endDate);
-    } else {
-        endDate = parseInt(endDate);
+        window.countdownEndDate = now.getTime() + COUNTDOWN_DAYS * 24 * 60 * 60 * 1000;
     }
     
     const now = new Date().getTime();
-    const timeLeft = endDate - now;
+    const timeLeft = window.countdownEndDate - now;
 
     // Если время истекло, начинаем новый отсчет
     if (timeLeft < 0) {
-        const newEndDate = new Date(now + COUNTDOWN_DAYS * 24 * 60 * 60 * 1000);
-        localStorage.setItem(STORAGE_KEY, newEndDate.getTime());
-        updateCountdown(); // Рекурсивный вызов для обновления с новой датой
+        const newNow = new Date().getTime();
+        window.countdownEndDate = newNow + COUNTDOWN_DAYS * 24 * 60 * 60 * 1000;
+        updateCountdown();
         return;
     }
 
@@ -151,22 +143,28 @@ function updateCountdown() {
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    // Обновляем элементы с добавлением нуля для чисел < 10
-    document.getElementById('days').textContent = days.toString().padStart(2, '0');
-    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    // Проверяем существование элементов перед обновлением
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
     
-    // Убираем блок "expired" если он был показан
+    if (daysEl) daysEl.textContent = days.toString().padStart(2, '0');
+    if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
+    if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
+    if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+    
+    // Скрываем expired блок
     const expiredBlock = document.getElementById('expired');
-    if (expiredBlock) {
-        expiredBlock.style.display = 'none';
-    }
     const countdownBlock = document.getElementById('countdown');
-    if (countdownBlock) {
-        countdownBlock.style.display = 'block';
-    }
+    
+    if (expiredBlock) expiredBlock.style.display = 'none';
+    if (countdownBlock) countdownBlock.style.display = 'flex';
 }
+
+// Обновляем таймер каждую секунду
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
 // Обновляем таймер каждую секунду
 updateCountdown(); // Запускаем сразу
