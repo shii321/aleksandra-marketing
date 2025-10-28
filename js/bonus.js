@@ -240,3 +240,71 @@
     });
 
 })();
+
+// ============================================
+// АВТОМАТИЧЕСКИЙ СЛАЙДЕР УСЛУГ
+// ============================================
+
+(function() {
+    'use strict';
+
+    // Дублируем карточки для бесконечного цикла
+    function initServicesSlider() {
+        const sliderTrack = document.querySelector('.slider-track');
+        
+        if (sliderTrack) {
+            const cards = sliderTrack.querySelectorAll('.service-card');
+            
+            // Клонируем все карточки для бесшовной анимации
+            cards.forEach(card => {
+                const clone = card.cloneNode(true);
+                sliderTrack.appendChild(clone);
+            });
+            
+            // Создаем индикаторы
+            createSliderDots(cards.length);
+        }
+    }
+
+    // Создание точек-индикаторов
+    function createSliderDots(count) {
+        const dotsContainer = document.querySelector('.slider-dots');
+        
+        if (dotsContainer) {
+            for (let i = 0; i < count; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'slider-dot';
+                if (i === 0) dot.classList.add('active');
+                
+                dot.addEventListener('click', () => (i));
+                dotsContainer.appendChild(dot);
+            }
+            
+            // Обновляем активную точку по времени
+            updateActiveDot(count);
+        }
+    }
+
+    // Обновление активной точки
+    function updateActiveDot(totalSlides) {
+        const dots = document.querySelectorAll('.slider-dot');
+        const slideDuration = 40000 / totalSlides; // Время на один слайд
+        
+        setInterval(() => {
+            const currentTime = Date.now();
+            const currentSlide = Math.floor((currentTime % 40000) / slideDuration);
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }, 100);
+    }
+
+    // Инициализация при загрузке
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initServicesSlider);
+    } else {
+        initServicesSlider();
+    }
+
+})();
