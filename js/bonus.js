@@ -8,51 +8,38 @@
     // Константы
     const DAYS_DURATION = 15; // Длительность акции в днях
     const MILLISECONDS_IN_DAY = 24 * 60 * 60 * 1000;
-    const STORAGE_KEY = 'bonusTimerStart';
-
-    // Получение или создание даты начала акции
-    function getOrCreateStartDate() {
-        let startDate = localStorage.getItem(STORAGE_KEY);
-        
-        if (!startDate) {
-            // Если даты нет - создаем новую
-            startDate = Date.now();
-            localStorage.setItem(STORAGE_KEY, startDate);
-        }
-        
-        return parseInt(startDate);
-    }
-
-    // Вычисление даты окончания
-    function getEndDate(startDate) {
-        return startDate + (DAYS_DURATION * MILLISECONDS_IN_DAY);
-    }
+    const CYCLE_DURATION = DAYS_DURATION * MILLISECONDS_IN_DAY; // Длительность одного цикла в миллисекундах
+    
+    // БАЗОВАЯ ДАТА - точка отсчета для всех циклов
+    // Можешь изменить на любую дату, от которой хочешь вести отсчет
+    const BASE_DATE = new Date('2025-01-01T00:00:00Z').getTime();
 
     // Форматирование чисел (добавляет 0 перед однозначными)
     function formatNumber(num) {
         return num < 10 ? '0' + num : num.toString();
     }
 
+    // Получение текущей позиции в цикле
+    function getCurrentCyclePosition() {
+        const now = Date.now();
+        const timeSinceBase = now - BASE_DATE;
+        
+        // Вычисляем, где мы находимся в текущем цикле
+        // Оператор % (модуль) дает остаток от деления - это наша позиция в текущем цикле
+        const positionInCycle = timeSinceBase % CYCLE_DURATION;
+        
+        // Вычисляем, сколько времени осталось до конца текущего цикла
+        const timeLeft = CYCLE_DURATION - positionInCycle;
+        
+        return timeLeft;
+    }
+
     // Обновление отображения таймера
     function updateTimer() {
-        const now = Date.now();
-        const startDate = getOrCreateStartDate();
-        const endDate = getEndDate(startDate);
-        const timeLeft = endDate - now;
+        const timeLeft = getCurrentCyclePosition();
 
         const countdownElement = document.getElementById('countdown');
         const expiredElement = document.getElementById('expired');
-
-        // Если время вышло - перезапускаем таймер
-        if (timeLeft <= 0) {
-            // Создаем новую дату начала
-            const newStartDate = Date.now();
-            localStorage.setItem(STORAGE_KEY, newStartDate);
-            
-            // Рекурсивно вызываем updateTimer для немедленного обновления
-            updateTimer();
-            return;
-        }
 
         // Вычисляем оставшееся время
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
@@ -61,10 +48,15 @@
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
         // Обновляем DOM
-        document.getElementById('days').textContent = formatNumber(days);
-        document.getElementById('hours').textContent = formatNumber(hours);
-        document.getElementById('minutes').textContent = formatNumber(minutes);
-        document.getElementById('seconds').textContent = formatNumber(seconds);
+        const daysElement = document.getElementById('days');
+        const hoursElement = document.getElementById('hours');
+        const minutesElement = document.getElementById('minutes');
+        const secondsElement = document.getElementById('seconds');
+        
+        if (daysElement) daysElement.textContent = formatNumber(days);
+        if (hoursElement) hoursElement.textContent = formatNumber(hours);
+        if (minutesElement) minutesElement.textContent = formatNumber(minutes);
+        if (secondsElement) secondsElement.textContent = formatNumber(seconds);
 
         // Показываем таймер, скрываем сообщение об истечении
         if (countdownElement) {
