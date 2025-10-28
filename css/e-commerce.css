@@ -1093,7 +1093,7 @@ body {
 /* =================================================================== */
 
 .footer {
-    background-color: #0F0F0F;
+    background-color: #1a1a1a;
     color: #E0E0E0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     border-top: 1px solid rgba(0, 242, 96, 0.3);
@@ -1142,7 +1142,7 @@ body {
     margin-bottom: 15px;
     display: inline-block;
     /* Градиентный текст */
-    background: linear-gradient(90deg, #0575E6, #00F260);
+    background: linear-gradient(90deg, #00F260, #0575E6);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1160,6 +1160,13 @@ body {
     color: #cccccc;
     display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+.footer-location svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 /* Социальные иконки */
@@ -1200,6 +1207,64 @@ body {
     align-items: center;
     gap: 12px;
     font-size: 1rem;
+}
+
+.cta-section {
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 60px 0;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* ЕДИНЫЙ стиль для всех CTA кнопок */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 70px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00F260 0%, #0575E6 100%);
+    border: 3px solid #00F260;
+    border-radius: 60px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0, 242, 96, 0.6),
+                0 0 60px rgba(0, 242, 96, 0.4),
+                0 0 90px rgba(0, 242, 96, 0.2);
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.cta-button:active {
+    transform: scale(1.05);
+}
+
+.cta-button span {
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
 }
 
 .contact-item {
@@ -1283,7 +1348,15 @@ body {
         text-align: center;
     }
 
-    .footer-right, .other-links {
+    .footer-right {
+        display: none; /* Скрываем Main и Bonus на мобильных */
+    }
+
+    .footer-left, .footer-center {
+        text-align: center;
+    }
+
+    .other-links {
         align-items: center;
     }
 
@@ -1296,9 +1369,50 @@ body {
     .footer {
         padding: 40px 20px;
     }
+    
+    .footer-slogan {
+        font-size: 1.5rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .footer-location {
+        font-size: 0.9rem;
+    }
+    
     .footer-bottom {
         flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px;
+    }
+    
+    .footer-slogan {
+        font-size: 1.3rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .social-grid {
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-link svg {
+        width: 18px;
+        height: 18px;
     }
 }

@@ -936,6 +936,64 @@ body {
     align-items: flex-end;
 }
 
+.cta-section {
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 60px 0;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* ЕДИНЫЙ стиль для всех CTA кнопок */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 70px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00F260 0%, #0575E6 100%);
+    border: 3px solid #00F260;
+    border-radius: 60px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0, 242, 96, 0.6),
+                0 0 60px rgba(0, 242, 96, 0.4),
+                0 0 90px rgba(0, 242, 96, 0.2);
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.cta-button:active {
+    transform: scale(1.05);
+}
+
+.cta-button span {
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+
 .other-link {
     color: var(--clr-text-muted);
     text-decoration: none;
