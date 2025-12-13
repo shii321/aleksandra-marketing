@@ -382,31 +382,61 @@ function toggleFaq(element) {
 // Article content database
 const articles = {
     1: {
-        title: "AI Business Solutions: Transform Your Operations with Artificial Intelligence",
+        title: "Business Intelligence Revolution: Transform Your Operations with AI. Get result in seconds.",
         content: `
-            <p>In today's rapidly evolving digital landscape, AI integration has become essential for businesses seeking competitive advantage. Artificial intelligence is no longer just a futuristic concept—it's a practical tool that drives efficiency, reduces costs, and unlocks new revenue streams across industries in Southeast Asia and beyond.</p>
+            <p>In today's rapidly evolving digital landscape, AI integration has become essential for businesses seeking competitive advantage. 
+            Artificial intelligence is no longer just a futuristic concept—it's a practical tool that drives efficiency, reduces costs, and unlocks new revenue streams across 
+            industries in Southeast Asia and beyond.
+            </p>
             
-            <h3>Why AI Integration Matters for Modern Businesses</h3>
-            <p>AI automation revolutionizes how businesses operate by handling repetitive tasks, analyzing vast amounts of data in real-time, and making intelligent predictions. Companies implementing AI solutions report significant improvements in operational efficiency, with many seeing ROI within the first 30-60 days. From CRM systems to digital marketing campaigns, AI empowers teams to focus on strategic initiatives while automated processes handle routine operations.</p>
+            <h3>The New Era of BI</h3>
+            <p>
+            Artificial Intelligence transforms Business Intelligence (BI) by moving beyond merely describing past events. 
+            Modern ML algorithms are capable of not only predicting future outcomes 
+            (e.g., demand, market trends, customer behavior) but also providing prescriptive recommendations—optimal courses of action to achieve set goals. 
+            Research indicates that this advanced approach allows companies to make more precise and timely decisions, securing a significant competitive edge.
+            </p>
             
-            <h3>Key Benefits of AI-Powered Business Automation</h3>
-            <p>AI-driven automation delivers measurable results across multiple business functions. Sales teams benefit from intelligent lead scoring and automated follow-ups, while marketing departments leverage AI for personalized customer engagement and predictive analytics. Customer support operations transform with 24/7 AI assistants that handle inquiries instantly, improving satisfaction rates while reducing operational costs.</p>
+            <h3>Automating Routine for Strategy</h3>
+            <p>
+            One of AI's key advantages is the automation of routine, repetitive tasks, such as report generation, preliminary data analysis, or customer service (chatbots). 
+            This not only reduces the risk of errors but also frees up highly skilled employees for more creative, strategic, and complex work. 
+            Thus, AI complements, rather than replaces, humans, focusing human capital on tasks requiring creativity and emotional intelligence.
+            </p>
             
-            <p>Data analytics powered by artificial intelligence uncovers insights that humans might miss, enabling better decision-making and strategic planning. AI algorithms process customer behavior patterns, market trends, and operational metrics to provide actionable recommendations. This level of business intelligence was once available only to large enterprises, but modern AI solutions make it accessible to small and medium-sized businesses throughout Thailand, Singapore, Malaysia, and the wider Asia-Pacific region.</p>
+            <p>Data analytics powered by artificial intelligence uncovers insights that humans might miss, 
+            enabling better decision-making and strategic planning. 
+            AI algorithms process customer behavior patterns, market trends, 
+            and operational metrics to provide actionable recommendations. 
+            This level of business intelligence was once available only to large enterprises, 
+            but modern AI solutions make it accessible to small and medium-sized businesses 
+            throughout Thailand, Singapore, Malaysia, and the wider Asia-Pacific region.
+            </p>
         `
     },
     2: {
-        title: "AI-Powered Analytics & Data-Driven Decision Making",
+        title: "Turning Data into Individual Offers",
         content: `
-            <h3>The Power of Intelligent Data Analysis</h3>
-            <p>Data analytics powered by artificial intelligence uncovers insights that humans might miss, enabling better decision-making and strategic planning. AI algorithms process customer behavior patterns, market trends, and operational metrics to provide actionable recommendations. This level of business intelligence was once available only to large enterprises, but modern AI solutions make it accessible to businesses of all sizes.</p>
-            
-            <h3>Real-Time Analytics for Business Growth</h3>
-            <p>Machine learning models continuously analyze your business data, identifying patterns and predicting outcomes with remarkable accuracy. From sales forecasting to customer churn prediction, AI gives you the insights needed to stay ahead of the competition.</p>
-            
-            <h3>Predictive Analytics in Action</h3>
-            <p>AI-powered predictive models help businesses anticipate market changes, optimize inventory, and personalize customer experiences at scale. These tools transform raw data into strategic advantages, enabling proactive rather than reactive business management.</p>
-        `
+            <h3>The Essence of AI Personalization</h3>
+            <p>
+            AI personalization utilizes Machine Learning and Natural Language Processing (NLP) to analyze massive data volumes: purchase history, 
+            views, social media interactions, and demographic trends. Based on this analysis, AI creates hyper-personalized offers, content, and 
+            ad messages for each individual user. 
+            According to a McKinsey report, companies excelling in personalization generate 40% more revenue from these activities than average players.
+            </p>
+
+            <h3>Chatbots and Virtual Assistants</h3>
+            <p>
+            Modern AI-driven chatbots have moved beyond stock responses. By learning from thousands of interactions, they can detect customer emotions, intent, and sentiment (sentiment analysis), 
+            allowing them to provide more accurate and empathetic responses. 
+            This ensures round-the-clock support, reduces customer frustration (according to Salesforce, 74% of consumers are annoyed by the lack of personalization), and significantly increases satisfaction and loyalty.
+            </p>
+    
+            <h3>Conversion and LTV Growth</h3>
+            <p>
+            Applying AI in personalization directly impacts key marketing metrics. Increasing communication relevance leads to higher engagement levels and, consequently, higher conversion rates. Furthermore, a personalized experience, making the customer feel valued, increases their Customer Lifetime Value (LTV) and contributes to better retention.
+            </p>
+              `
     },
     3: {
         title: "Implementing AI in Your Business: A Strategic Approach",
