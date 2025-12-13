@@ -573,26 +573,32 @@ slider.addEventListener('touchend', e => {
     handleSwipe();
 });
 
+// Замени функцию handleSwipe на эту (более плавный свайп):
+
 function handleSwipe() {
     const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
     const scrollLeft = slider.scrollLeft;
     const maxScroll = slider.scrollWidth - slider.clientWidth;
+    const swipeDistance = touchStartX - touchEndX;
     
-    if (touchStartX - touchEndX > 50) {
-        // Свайп влево
-        if (scrollLeft >= maxScroll - 10) {
-            slider.scrollTo({ left: 0, behavior: 'smooth' });
+    // Увеличил порог для более уверенного свайпа
+    if (Math.abs(swipeDistance) > 75) {
+        if (swipeDistance > 0) {
+            // Свайп влево
+            if (scrollLeft >= maxScroll - 10) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                const currentIndex = Math.round(scrollLeft / cardWidth);
+                scrollToCard(currentIndex + 1);
+            }
         } else {
-            slider.scrollBy({ left: 500, behavior: 'smooth' });
-        }
-    }
-    if (touchEndX - touchStartX > 50) {
-        // Свайп вправо
-        const currentIndex = Math.round(scrollLeft / cardWidth);
-        if (currentIndex === 0) {
-            scrollToCard(cardCount - 1);
-        } else {
-            slider.scrollBy({ left: -500, behavior: 'smooth' });
+            // Свайп вправо
+            const currentIndex = Math.round(scrollLeft / cardWidth);
+            if (currentIndex === 0) {
+                scrollToCard(cardCount - 1);
+            } else {
+                scrollToCard(currentIndex - 1);
+            }
         }
     }
 }
