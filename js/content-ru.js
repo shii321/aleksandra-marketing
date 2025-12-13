@@ -181,117 +181,117 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Designing Content for Cognitive Impact",
+        title: "Разработка контента для когнитивного воздействия",
         content: `
-            <p>This article explores how applying basic principles of cognitive psychology and eye-tracking research can drastically improve content comprehension, recall, and retention</p>
+            <p>Эта статья исследует, как применение базовых принципов когнитивной психологии и исследований отслеживания движения глаз может значительно улучшить понимание, запоминание и сохранение контента.</p>
             
-            <h3>Harnessing the Zeigarnik Effect</h3>
-            <p>Design sequential content (like multi-step forms or interactive quizzes) to exploit the human tendency to remember uncompleted tasks, boosting engagement through anticipation.</p>
+            <h3>Использование эффекта Зейгарник</h3>
+            <p>Разрабатывайте последовательный контент (например, многоэтапные формы или интерактивные викторины), чтобы использовать человеческую склонность запоминать незавершенные задачи, повышая вовлеченность через предвкушение.</p>
             
-            <h3>The Rule of F-Pattern Scanning</h3>
-            <p>Strategically place the most vital information (headlines, keywords, CTAs) along the top and left margins, acknowledging the way users naturally scan text-heavy web pages.</p>
+            <h3>Правило сканирования по F-паттерну</h3>
+            <p>Стратегически размещайте самую важную информацию (заголовки, ключевые слова, призывы к действию) вдоль верхнего и левого полей, учитывая то, как пользователи естественным образом сканируют веб-страницы с большим количеством текста.</p>
               `
     },
     2: {
-        title: "Designing the Path to Purchase",
+        title: "Проектирование пути к покупке",
         content: `
         <p>
-        This piece focuses on how content layout and structural design directly influence user behavior, minimizing friction and maximizing the likelihood of a conversion.
+        Этот материал фокусируется на том, как макет контента и структурный дизайн напрямую влияют на поведение пользователя, минимизируя трение и максимизируя вероятность конверсии.
         </p>
-            <h3>Above the Fold Priority</h3>
+            <h3>Приоритет 'Над сгибом' (Above the Fold)</h3>
             <p>
-            Reserve the most critical space (visible without scrolling) for the value proposition, the primary image, and the main, high-contrast CTA, making the purpose clear instantly.
+            Зарезервируйте самое критическое пространство (видимое без прокрутки) для ценностного предложения, основного изображения и главного, высококонтрастного призыва к действию (CTA), делая цель мгновенно ясной.
             </p>
 
-            <h3>Reinforcing CTAs with Repetition</h3>
+            <h3>Усиление CTA через повторение</h3>
             <p>
-            Place secondary calls-to-action strategically throughout the content (e.g., after the introduction, mid-article summary, and conclusion) to provide convenient opportunities for conversion at multiple decision points.
+            Размещайте вторичные призывы к действию стратегически по всему контенту (например, после введения, в середине статьи и в заключении), чтобы предоставить удобные возможности для конверсии в нескольких точках принятия решения.
             </p>
 
-            <h3>Leveraging Directional Cues</h3>
+            <h3>Использование направляющих сигналов</h3>
             <p>
-            Utilize subtle visual elements—arrows, gradients, negative space flow, or even the gaze of models in photography—to physically guide the user's eye towards the next logical piece of content or the CTA button.
+            Используйте тонкие визуальные элементы — стрелки, градиенты, потоки отрицательного пространства или даже взгляд моделей на фотографиях — чтобы физически направить взгляд пользователя к следующему логическому фрагменту контента или кнопке CTA.
             </p>
             `
     },
     3: {
-        title: "The Blueprint for Growth: Implementing a Component-Based Content Library",
+        title: "План роста: внедрение компонентной библиотеки контента",
         content: `
-            <h3>Atomic Design Principles</h3>
+            <h3>Принципы атомарного дизайна</h3>
             <p>
-            Organize content elements into atoms (buttons, fonts), molecules (search bar, input field), and organisms (full footer section) for rapid assembly of any new page or post while maintaining universal brand standards.
+            Организуйте элементы контента в атомы (кнопки, шрифты), молекулы (строка поиска, поле ввода) и организмы (полный раздел нижнего колонтитула) для быстрой сборки любой новой страницы или поста при сохранении универсальных стандартов бренда.
             </p>
 
-            <h3>Centralized Style and Voice Guide</h3>
+            <h3>Централизованное руководство по стилю и тону голоса</h3>
             <p>
-            Maintain a single source of truth for visual guidelines (color codes, spacing rules) and the content's editorial tone of voice, ensuring every piece of content speaks with the same, consistent brand personality.
+            Поддерживайте единый источник истины для визуальных руководств (цветовые коды, правила интервалов) и редакционного тона голоса контента, гарантируя, что каждая часть контента говорит одной и той же, последовательной индивидуальностью бренда.
             </p>
 
-            <h3>Testing for Cross-Platform Integrity</h3>
+            <h3>Тестирование кросс-платформенной целостности</h3>
             <p>
-            Use the design system to ensure all components render correctly and perform optimally across diverse platforms (web, email, mobile app, paid ads), eliminating the need for custom fixes.
+            Используйте дизайн-систему, чтобы гарантировать, что все компоненты отображаются корректно и работают оптимально на различных платформах (веб, электронная почта, мобильное приложение, платная реклама), устраняя необходимость в индивидуальных исправлениях.
             </p>
              `
     },
     4: {
-        title: "Turning Numbers into Narratives: Expert Data Content Design",
+        title: "Превращение чисел в истории: Экспертный дизайн контента на основе данных",
         content: `
         <p>
-        Design is the bridge between complex data and user understanding. This article details how to use visual best practices to ensure data is not only accurate but also engaging and persuasive.
+        Дизайн — это мост между сложными данными и пониманием пользователя. Эта статья подробно описывает, как использовать лучшие визуальные практики, чтобы данные были не только точными, но и привлекательными и убедительными.
         </p>
 
-            <h3>Highlighting the Key Insight</h3>
+            <h3>Выделение ключевой идеи</h3>
             <p>
-            Utilize color contrast and annotation within charts (e.g., a bright accent color for the winning metric) to instantly direct the viewer's attention to the most important conclusion, preventing visual clutter.
+            Используйте цветовой контраст и аннотации внутри диаграмм (например, яркий акцентный цвет для выигрышного показателя), чтобы мгновенно направить внимание зрителя к самому важному выводу, предотвращая визуальный беспорядок.
             </p>
 
-            <h3>Choosing the Right Chart Type</h3>
-            <p>Select visualization tools appropriate for the relationship being shown (e.g., bar charts for comparison, line graphs for trends over time, pie charts for proportions) to prevent misinterpretation and enhance clarity.
+            <h3>Выбор правильного типа диаграммы</h3>
+            <p>Выбирайте инструменты визуализации, соответствующие отображаемой связи (например, гистограммы для сравнения, линейные графики для тенденций во времени, круговые диаграммы для пропорций), чтобы предотвратить неверное толкование и повысить ясность.
             </p>
             
             `
     },
     5: {
-        title: "Inclusive Content: Meeting WCAG Standards for Universal Reach",
+        title: "Инклюзивный контент: Соответствие стандартам WCAG для всеобщего охвата",
         content: `
         <p>
-        A guide to implementing design practices that ensure your content is usable by all individuals, including those with visual, auditory, cognitive, and motor impairments.
+        Руководство по внедрению дизайнерских практик, которые гарантируют, что ваш контент пригоден для использования всеми людьми, включая тех, у кого есть нарушения зрения, слуха, когнитивные или двигательные нарушения.
          </p>
 
-            <h3>Ensuring Adequate Color Contrast</h3>
+            <h3>Обеспечение адекватного цветового контраста</h3>
             <p>
-            Adhere strictly to WCAG 2.1 AA guidelines, maintaining a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text to ensure readability for visually impaired users.
+            Строго придерживайтесь руководящих принципов WCAG 2.1 AA, поддерживая минимальный коэффициент контрастности 4.5:1 для обычного текста и 3:1 для крупного текста, чтобы обеспечить читаемость для пользователей с нарушениями зрения.
              </p>
 
-            <h3>Descriptive Alt Text for All Visuals</h3>
-            <p>All images, charts, and decorative elements must be supported by accurate, descriptive alternative text to be processed and understood by screen readers and search engines.
+            <h3>Описательный Alt-текст для всех визуальных элементов</h3>
+            <p>Все изображения, диаграммы и декоративные элементы должны сопровождаться точным, описательным альтернативным текстом, чтобы их могли обрабатывать и понимать программы чтения с экрана и поисковые системы.
             </p>
 
-            <h3>Clear Focus States and Keyboard Navigation</h3>
+            <h3>Четкие состояния фокуса и навигация с помощью клавиатуры</h3>
             <p>
-            Ensure that interactive content (links, buttons, forms) is clearly highlighted when navigated by keyboard (:focus state) and can be accessed without a mouse, serving users with motor disabilities.
+            Убедитесь, что интерактивный контент (ссылки, кнопки, формы) четко выделен при навигации с помощью клавиатуры (состояние :focus) и доступен без мыши, что служит пользователям с двигательными нарушениями.
             </p>
             `
     },
     6: {
-        title: "Optimizing Content Design for Mobile Users",
+        title: "Оптимизация дизайна контента для мобильных пользователей",
         content: `
         <p>
-        With the majority of web traffic coming from smartphones, a mobile-first approach is essential. This strategy dictates that content must be optimized for speed, touch, and linear consumption.
+        Поскольку большая часть веб-трафика поступает со смартфонов, подход mobile-first имеет важное значение. Эта стратегия диктует, что контент должен быть оптимизирован для скорости, сенсорного управления и линейного потребления.
         </p>
 
-            <h3>Prioritizing Thumb-Friendly Zones</h3>
+            <h3>Приоритет 'Удобных для большого пальца' зон</h3>
             <p>
-            Place primary navigation and key action buttons within the "thumb zone" (the lower third of the screen) for effortless, natural, one-handed interaction.
+            Размещайте основную навигацию и ключевые кнопки действий в «зоне большого пальца» (нижняя треть экрана) для легкого, естественного взаимодействия одной рукой.
             </p>
 
-            <h3>Optimizing Image File Size and Format</h3>
-            <p>Compress all visual content (using modern formats like WebP) and use responsive image tags to load only the appropriate size for the device, drastically reducing mobile load times and data consumption.
+            <h3>Оптимизация размера и формата файла изображения</h3>
+            <p>Сжимайте весь визуальный контент (используя современные форматы, такие как WebP) и используйте адаптивные теги изображений, чтобы загружать только соответствующий размер для устройства, что значительно сокращает время мобильной загрузки и потребление данных.
             </p>
 
-            <h3>Linear and Stacked Content Flow</h3>
+            <h3>Линейный и вертикально расположенный поток контента</h3>
             <p>
-            Design content to stack vertically and flow linearly. This ensures that the user maintains context while scrolling and eliminates distracting sidebars or two-column layouts that break the narrative thread on narrow screens.
+            Разрабатывайте контент таким образом, чтобы он располагался вертикально и протекал линейно. Это гарантирует, что пользователь сохраняет контекст при прокрутке и исключает отвлекающие боковые панели или двухколоночные макеты, которые нарушают повествовательную нить на узких экранах.
             </p>
             `
     }

@@ -1305,6 +1305,9 @@ body {
         font-size: 25px; /* Уменьшил с 30px */
         margin-bottom: 20px;
     }
+    .slider-nav{
+        display: none;
+    }
 }
 
 .other-link {
