@@ -1787,6 +1787,12 @@ th {
     .article-slider-container {
         position: relative;
     }
+    .slider-dots {
+        padding: 0;
+    }
+    .section-header{
+         margin-bottom: 30px;
+    }
     
     /* Talk Block Mobile */
     .talk-title {
