@@ -1,0 +1,80 @@
+<section class="articles-section">
+        <div class="section-header">
+            <h2>Expert Insights on AI</h2>
+        </div>
+
+        <div class="article-slider-container">
+            <div class="article-slider" id="articleSlider">
+                <!-- Article 1 -->
+                <div class="article-card" data-article="1">
+                    
+                    <h3>➣  Business Intelligence Revolution</h3>
+                    <p>➣➣➣ Discover how AI integration has become essential for businesses seeking competitive advantage in today's digital landscape...</p>
+                    <p>Leverage Machine Learning to accurately forecast demand, optimize operations, and make strategic decisions based on real-time data, driving financial gains.</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card" data-article="2">
+                   
+                    <h3>➣ The Next Level of Customer Interaction</h3>
+                    <p>➣➣➣ Achieve true 1:1 marketing. AI analyzes vast customer datasets to create hyper-personalized offers and content that convert...</p>
+                    <p>Implement 24/7 AI assistants and chatbots that understand sentiment, boosting customer loyalty and dramatically increasing Customer Lifetime Value (LTV).</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card" data-article="3">
+                    
+                    <h3>➣ AI in Supply Chain Optimization</h3>
+                    <p>➣➣➣ Minimize shortages and excess inventory with highly accurate, ML-driven demand forecasting and real-time stock management...</p>
+                    <p>Gain end-to-end visibility and automate logistics execution to cut operational costs, improve delivery speed, and reduce waste across the entire chain.</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card" data-article="4">
+                
+                    <h3>➣ Boosting Operational Efficiency through AI-Powered Automation</h3>
+                    <p>➣➣➣ Implement **Intelligent Process Automation (IPA) by combining RPA with Machine Learning to automate complex, decision-making tasks...</p>
+                    <p>Transform internal functions like HR and Finance: reduce errors, free up skilled employees for strategic work, and unlock new growth-oriented business models.</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+
+                <!-- Article 5 -->
+
+                <div class="article-card" data-article="5">
+
+                    <h3>➣ AI in Marketing and Sales</h3>
+                    <p>➣➣➣ Transform your marketing strategies through advanced segmentation, personalization, and real-time campaign optimization...</p>
+                    <p>Machine learning and Generative AI accelerate content creation and analyze customer data to predict behavior and maximize ROI on every campaign.</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+
+                  <!-- Article 6 -->
+
+
+                <div class="article-card" data-article="6">
+                    
+                    <h3>➣ AI in Cybersecurity and Fraud Detection</h3>
+                    <p>➣➣➣ Ensure proactive security. AI monitors network traffic and user behavior in real-time to detect and neutralize new anomalies and threats...</p>
+                    <p>Implement ML-based systems in finance to identify hidden patterns of fraud and reduce financial losses, safeguarding your business and customer trust.</p>
+                    <span class="read-more">Read Full Article →</span>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <button class="nav-btn" id="prevBtn">←</button>
+                <button class="nav-btn" id="nextBtn">→</button>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <div class="article-modal" id="articleModal">
+        <div class="modal-content" id="modalContent">
+            <button class="close-modal" id="closeModal">×</button>
+            <div id="articleContent"></div>
+        </div>
+    </div>

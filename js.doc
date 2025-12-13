@@ -1,0 +1,209 @@
+// ======================== ARTICLE SLIDER ========================
+const articles = {
+    1: {
+        title: "AI Business Solutions: Transform Your Operations with Artificial Intelligence",
+        content: `
+            <p>In today's rapidly evolving digital landscape, AI integration has become essential for businesses seeking competitive advantage. Artificial intelligence is no longer just a futuristic concept—it's a practical tool that drives efficiency, reduces costs, and unlocks new revenue streams across industries in Southeast Asia and beyond.</p>
+            
+            <h3>Why AI Integration Matters for Modern Businesses</h3>
+            <p>AI automation revolutionizes how businesses operate by handling repetitive tasks, analyzing vast amounts of data in real-time, and making intelligent predictions. Companies implementing AI solutions report significant improvements in operational efficiency, with many seeing ROI within the first 30-60 days. From CRM systems to digital marketing campaigns, AI empowers teams to focus on strategic initiatives while automated processes handle routine operations.</p>
+            
+            <h3>Key Benefits of AI-Powered Business Automation</h3>
+            <p>AI-driven automation delivers measurable results across multiple business functions. Sales teams benefit from intelligent lead scoring and automated follow-ups, while marketing departments leverage AI for personalized customer engagement and predictive analytics. Customer support operations transform with 24/7 AI assistants that handle inquiries instantly, improving satisfaction rates while reducing operational costs.</p>
+            
+            <p>Data analytics powered by artificial intelligence uncovers insights that humans might miss, enabling better decision-making and strategic planning. AI algorithms process customer behavior patterns, market trends, and operational metrics to provide actionable recommendations. This level of business intelligence was once available only to large enterprises, but modern AI solutions make it accessible to small and medium-sized businesses throughout Thailand, Singapore, Malaysia, and the wider Asia-Pacific region.</p>
+        `
+    },
+    2: {
+        title: "AI-Powered Analytics & Data-Driven Decision Making",
+        content: `
+            <h3>The Power of Intelligent Data Analysis</h3>
+            <p>Data analytics powered by artificial intelligence uncovers insights that humans might miss, enabling better decision-making and strategic planning. AI algorithms process customer behavior patterns, market trends, and operational metrics to provide actionable recommendations. This level of business intelligence was once available only to large enterprises, but modern AI solutions make it accessible to businesses of all sizes.</p>
+            
+            <h3>Real-Time Analytics for Business Growth</h3>
+            <p>Machine learning models continuously analyze your business data, identifying patterns and predicting outcomes with remarkable accuracy. From sales forecasting to customer churn prediction, AI gives you the insights needed to stay ahead of the competition.</p>
+            
+            <h3>Predictive Analytics in Action</h3>
+            <p>AI-powered predictive models help businesses anticipate market changes, optimize inventory, and personalize customer experiences at scale. These tools transform raw data into strategic advantages, enabling proactive rather than reactive business management.</p>
+        `
+    },
+    3: {
+        title: "Implementing AI in Your Business: A Strategic Approach",
+        content: `
+            <h3>Starting Your AI Journey</h3>
+            <p>Successful AI adoption requires careful planning and phased implementation. Start by identifying processes that consume significant time or resources—these are ideal candidates for automation. Common starting points include customer service chatbots, automated data entry, and predictive inventory management.</p>
+            
+            <h3>Choosing the Right AI Solutions</h3>
+            <p>The key to effective AI integration lies in choosing solutions that align with your business goals and existing infrastructure. Whether you're operating in Phuket, Bangkok, or anywhere across Southeast Asia, scalable AI solutions can be customized to match your industry requirements, company size, and growth objectives.</p>
+            
+            <h3>Integration Without Disruption</h3>
+            <p>Modern AI platforms integrate seamlessly with popular CRM systems, marketing tools, and business applications, ensuring smooth adoption without disrupting current operations. As teams become comfortable with AI tools, expand into more complex applications like forecasting, advanced analytics, and intelligent workflow automation.</p>
+        `
+    },
+    4: {
+        title: "AI Solutions for Sales and Marketing Optimization",
+        content: `
+            <h3>Transform Your Digital Marketing</h3>
+            <p>AI integration transforms digital marketing strategies through advanced segmentation, personalization, and campaign optimization. Machine learning algorithms analyze customer data to predict purchasing behavior, optimize ad spend, and identify high-value prospects.</p>
+            
+            <h3>Automated Email Marketing Excellence</h3>
+            <p>Automated email marketing systems powered by AI achieve higher open rates and conversions by delivering the right message at the optimal time. Natural language processing helps craft compelling content that resonates with your audience.</p>
+            
+            <h3>SEO & PPC Campaign Optimization</h3>
+            <p>SEO and PPC campaigns benefit significantly from AI-driven insights. Natural language processing helps identify trending keywords and content opportunities, while predictive analytics forecast campaign performance. Businesses using AI for digital marketing report improved conversion rates, lower customer acquisition costs, and more efficient resource allocation.</p>
+        `
+    }
+};
+
+const slider = document.getElementById('articleSlider');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const modal = document.getElementById('articleModal');
+const closeModalBtn = document.getElementById('closeModal');
+const articleContent = document.getElementById('articleContent');
+const dotsContainer = document.getElementById('sliderDots');
+
+const cardCount = document.querySelectorAll('.article-card').length;
+const isArticleMobile = window.innerWidth <= 768;
+const dotsCount = isArticleMobile ? cardCount : cardCount - 2;
+
+for (let i = 0; i < dotsCount; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => scrollToCard(i));
+    dotsContainer.appendChild(dot);
+}
+
+window.addEventListener('resize', () => {
+    const newIsArticleMobile = window.innerWidth <= 768;
+    const currentDotsCount = dotsContainer.children.length;
+    const neededDotsCount = newIsArticleMobile ? cardCount : cardCount - 2;
+    
+    if (currentDotsCount !== neededDotsCount) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < neededDotsCount; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => scrollToCard(i));
+            dotsContainer.appendChild(dot);
+        }
+        updateDots();
+    }
+});
+
+function updateDots() {
+    const scrollLeft = slider.scrollLeft;
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const activeIndex = Math.round(scrollLeft / cardWidth);
+    
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+    });
+}
+
+function scrollToCard(index) {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    slider.scrollTo({
+        left: cardWidth * index,
+        behavior: 'smooth'
+    });
+}
+
+slider.addEventListener('scroll', updateDots);
+
+prevBtn.addEventListener('click', () => {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const scrollLeft = slider.scrollLeft;
+    const currentIndex = Math.round(scrollLeft / cardWidth);
+    
+    if (currentIndex === 0) {
+        scrollToCard(cardCount - 1);
+    } else {
+        slider.scrollBy({ left: -500, behavior: 'smooth' });
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const scrollLeft = slider.scrollLeft;
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    
+    if (scrollLeft >= maxScroll - 10) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+        slider.scrollBy({ left: 500, behavior: 'smooth' });
+    }
+});
+
+document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const articleId = card.getAttribute('data-article');
+        const article = articles[articleId];
+        
+        articleContent.innerHTML = `
+            <h2>${article.title}</h2>
+            ${article.content}
+        `;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (modal.classList.contains('active') && e.key === 'Escape') {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+slider.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+slider.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const scrollLeft = slider.scrollLeft;
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    const swipeDistance = touchStartX - touchEndX;
+    
+    if (Math.abs(swipeDistance) > 75) {
+        if (swipeDistance > 0) {
+            if (scrollLeft >= maxScroll - 10) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                const currentIndex = Math.round(scrollLeft / cardWidth);
+                scrollToCard(currentIndex + 1);
+            }
+        } else {
+            const currentIndex = Math.round(scrollLeft / cardWidth);
+            if (currentIndex === 0) {
+                scrollToCard(cardCount - 1);
+            } else {
+                scrollToCard(currentIndex - 1);
+            }
+        }
+    }
+}
