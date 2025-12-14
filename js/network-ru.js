@@ -173,98 +173,97 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Finding Partners in Adjacent Markets",
+        title: "Поиск Партнеров на Смежных Рынках",
         content: `
             <p>
-            True partnership growth comes from identifying companies that serve the same customer but solve different problems. This strategy expands your Total Addressable Market (TAM) without direct competition.
+            Настоящий рост партнерских отношений происходит за счет выявления компаний, которые обслуживают того же клиента, но решают разные проблемы. Эта стратегия расширяет Ваш Общий Доступный Рынок (TAM) без прямой конкуренции.
             </p>
 
-            <h3>Identifying the White Space Opportunities</h3>
+            <h3>Выявление Возможностей в «Белых Зонах»</h3>
             <p>
-            We analyze the services your customer buys immediately before or after purchasing yours. These "white space" services represent perfect co-selling or co-marketing partners who already have trust with your ideal client.
+            Мы анализируем услуги, которые Ваш клиент покупает непосредственно до или сразу после покупки Вашего продукта. Эти услуги в «белых зонах» представляют собой идеальных партнеров для совместных продаж или маркетинга, которые уже пользуются доверием Вашего идеального клиента.
             </p>
 
-            <h3>The "Joint Solution" Value Proposition</h3>
+            <h3>Ценностное Предложение «Совместного Решения»</h3>
             <p>
-            Instead of promoting each other’s stand-alone products, we focus on building a single, integrated joint solution that solves a complete customer workflow. This unified offering provides exponentially higher perceived value to the end-user.
-            </p
-            >
+            Вместо продвижения отдельных продуктов друг друга, мы фокусируемся на создании единого, интегрированного совместного решения, которое охватывает весь рабочий процесс клиента. Это унифицированное предложение обеспечивает экспоненциально более высокую воспринимаемую ценность для конечного пользователя.
+            </p>
             `
     },
     2: {
-        title: "Precision Tracking: Designing a Multi-Touch Attribution Model for Partnerships",
+        title: "Точный Трекинг: Разработка Модели Мульти-Атрибуции для Партнерств",
         content: `
-            <h3>Dedicated Partner Referral Links and Codes</h3>
+            <h3>Выделенные Партнерские Ссылки и Коды</h3>
             <p>
-            Every partner receives unique tracking assets (links, dedicated landing pages, and unique code fields in the CRM) that guarantee proper attribution, regardless of when the final sale occurs.
+            Каждый партнер получает уникальные активы для отслеживания (ссылки, выделенные целевые страницы и уникальные поля кода в CRM), которые гарантируют правильную атрибуцию, независимо от того, когда произойдет окончательная продажа.
             </p>
 
-            <h3>CRM Integration for Influence Tracking</h3>
+            <h3>Интеграция CRM для Отслеживания Влияния</h3>
             <p>
-            We configure CRM rules to track not just the source of the lead, but the influence of the partner. If a partner touchpoint was involved at any stage (e.g., a joint webinar), that influence is logged and scored.
+            Мы настраиваем правила CRM для отслеживания не только *источника* лида, но и *влияния* партнера. Если на каком-либо этапе было задействовано контактное лицо партнера (например, совместный вебинар), это влияние регистрируется и оценивается.
             </p>
 
-            <h3>The 90-Day Conversion Window</h3>
-            <p>To simplify commission and revenue sharing, we establish clear legal and technical parameters, such as a 90-day conversion window, providing certainty for both parties regarding attributed sales and compensation.
+            <h3>90-Дневное Окно Конверсии</h3>
+            <p>Чтобы упростить комиссионные и распределение доходов, мы устанавливаем четкие юридические и технические параметры, такие как 90-дневное окно конверсии, обеспечивая определенность для обеих сторон в отношении атрибутированных продаж и вознаграждения.
             </p>    `
     },
     3: {
-        title: "Maximizing Link Equity and Topical Authority via Partners",
+        title: "Максимизация Веса Ссылок и Тематического Авторитета через Партнеров",
         content: `
-            <h3>Joint Research and Data Reports</h3>
-            <p>We initiate collaborative research projects that aggregate data from both companies. The resulting co-branded report generates significant PR buzz and high-quality link opportunities from industry publications to both domains.
+            <h3>Совместные Исследования и Отчеты о Данных</h3>
+            <p>Мы инициируем совместные исследовательские проекты, которые объединяют данные обеих компаний. Полученный совместный отчет генерирует значительный PR-шум и возможности для получения высококачественных ссылок от отраслевых изданий на оба домена.
             </p>
 
-            <h3>The Guest Post Exchange Matrix</h3>
-            <p>Beyond simple guest posting, we structure a reciprocal linking agreement where partners write expert content for each other's blogs, specifically targeting high-value, non-competitive keywords to boost topical relevance.
+            <h3>Матрица Обмена Гостевыми Постами</h3>
+            <p>Помимо простого гостевого постинга, мы структурируем соглашение о взаимном обмене ссылками, где партнеры пишут экспертный контент для блогов друг друга, специально нацеливаясь на высокоценные, неконкурентные ключевые слова для повышения тематической релевантности.
             </p>
 
-            <h3>Joint Webinar-to-Lead Automation</h3>
-            <p>A co-hosted webinar is followed by an automated sequence that segments leads based on engagement level and divides them according to the pre-agreed terms, quickly converting shared content consumers into qualified sales leads.
+            <h3>Автоматизация Перехода от Совместного Вебинара к Лиду</h3>
+            <p>За совместным вебинаром следует автоматическая последовательность, которая сегментирует лиды на основе уровня вовлеченности и разделяет их в соответствии с заранее согласованными условиями, быстро превращая потребителей совместного контента в квалифицированные лиды для продаж.
             </p>    `
     },
     4: {
-        title: "Beyond Commission",
+        title: "Больше, Чем Просто Комиссия",
         content: `
-            <h3>Tiered Reward System</h3>
-            <p>We establish clear performance tiers based on qualified leads or revenue generated. Higher tiers unlock better commission rates, dedicated support, exclusive co-marketing funds, and high-visibility recognition.
+            <h3>Многоуровневая Система Вознаграждений</h3>
+            <p>Мы устанавливаем четкие уровни производительности, основанные на квалифицированных лидах или полученном доходе. Более высокие уровни открывают лучшие ставки комиссии, выделенную поддержку, эксклюзивные фонды для совместного маркетинга и признание с высокой видимостью.
             </p>
 
-            <h3>The Monthly Leaderboard and Recognition</h3>
-            <p>A publicly visible (internal) leaderboard tracking partner performance injects competitive energy. Top performers receive highly coveted recognition, such as joint case studies, CEO shout-outs, or exclusive event access.
+            <h3>Ежемесячный Рейтинг и Признание</h3>
+            <p>Публично видимый (внутренний) рейтинг, отслеживающий производительность партнеров, привносит соревновательную энергию. Лучшие получают очень желанное признание, такое как совместные кейсы, упоминания генерального директора или эксклюзивный доступ к мероприятиям.
             </p>
 
-            <h3>Non-Monetary Partner Benefits</h3>
-            <p>Incentives don't always require cash. We offer strategic non-monetary rewards, such as priority access to new product features, dedicated engineering support, or cross-training sessions, deepening the operational bond.
+            <h3>Неденежные Партнерские Преимущества</h3>
+            <p>Стимулы не всегда требуют наличных. Мы предлагаем стратегические неденежные вознаграждения, такие как приоритетный доступ к новым функциям продукта, выделенная инженерная поддержка или совместное обучение, углубляющие операционную связь.
             </p> `
     },
     5: {
-        title: "A Continuous Cycle of Joint Innovation",
+        title: "Непрерывный Цикл Совместных Инноваций",
         content: `
-            <h3>Formal Partner Advisory Council</h3>
-            <p>We organize regular sessions with top strategic partners to discuss gaps in the current product and potential integrations. This formal council gives partners a voice and guarantees commitment to future joint roadmaps.
+            <h3>Официальный Консультативный Совет Партнеров (PAC)</h3>
+            <p>Мы организуем регулярные встречи с ведущими стратегическими партнерами для обсуждения пробелов в текущем продукте и потенциальных интеграций. Этот официальный совет дает партнерам право голоса и гарантирует приверженность будущим совместным планам развития.
             </p>
 
-            <h3>API Integration as a Partnership Metric</h3>
-            <p>Success is measured not just by sales referrals, but by the depth and quality of technical integration. A robust, seamless API integration becomes a key performance indicator (KPI) for the partnership team.
+            <h3>API Интеграция как Партнерская Метрика</h3>
+            <p>Успех измеряется не только рефералами по продажам, но и глубиной и качеством технической интеграции. Надежная, бесшовная интеграция API становится ключевым показателем эффективности (KPI) для партнерской команды.
             </p>
 
-            <h3>Early Access and Beta Testing for Partners</h3>
-            <p>Partners receive early access to new features and participate in beta testing. This gives them a head start in developing complementary services or training their sales teams, ensuring launch-day readiness for the joint solution.
+            <h3>Ранний Доступ и Бета-Тестирование для Партнеров</h3>
+            <p>Партнеры получают ранний доступ к новым функциям и участвуют в бета-тестировании. Это дает им преимущество в разработке комплементарных услуг или обучении своих отделов продаж, обеспечивая готовность к совместному решению к моменту запуска.
             </p>    `
     },
     6: {
-        title: "A Data-Driven Approach to Partner Portfolio Management",
+        title: "Подход к Управлению Партнерским Портфелем на Основе Данных",
         content: `
-            <h3>Defining the Partnership Health Score</h3>
-            <p>We implement a multi-factor "Health Score" based on three KPIs: Lead Volume, Shared Revenue, and Engagement Frequency. A score below the benchmark for two consecutive quarters triggers a formal review. </p>
+            <h3>Определение Показателя Здоровья Партнерства</h3>
+            <p>Мы внедряем многофакторный «Показатель Здоровья», основанный на трех KPI: Объем Лидов, Общий Доход и Частота Взаимодействия. Показатель ниже эталона в течение двух кварталов подряд инициирует формальный пересмотр. </p>
 
-            <h3>The Three-Phase Disengagement Process</h3>
-            <p>Dissolving an alliance involves a three-step process: Review, Optimization Plan, and Graceful Sunset
+            <h3>Трехфазный Процесс Прекращения Сотрудничества</h3>
+            <p>Расторжение альянса включает трехэтапный процесс: Анализ, План Оптимизации и Корректное Прекращение (Graceful Sunset).
             </p>
 
-            <h3>Protecting Shared Data and IP</h3>
-            <p>Clear legal and technical protocols are established for the end of the partnership, ensuring the safe and compliant handling of shared customer lists, intellectual property, and access credentials to prevent future conflict.
+            <h3>Защита Общих Данных и ИС</h3>
+            <p>Устанавливаются четкие юридические и технические протоколы для завершения партнерства, обеспечивающие безопасное и соответствующее нормам обращение с общими списками клиентов, интеллектуальной собственностью и учетными данными для предотвращения будущих конфликтов.
             </p>    `
     }
 };
