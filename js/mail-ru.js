@@ -261,115 +261,115 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "The Technical Stack of Perfect Email Deliverability",
+        title: "Техническая Основа Идеальной Доставляемости Email",
         content: `
             <p>
-            Open rates are useless if your emails never reach the primary inbox. We treat email marketing as an IT infrastructure problem, focusing on the technical setup and sender reputation required to pass modern ISP filters
+            Показатели открытия бесполезны, если Ваши электронные письма никогда не попадают в основной почтовый ящик. Мы рассматриваем email-маркетинг как проблему ИТ-инфраструктуры, фокусируясь на технической настройке и репутации отправителя, необходимых для прохождения современных фильтров ISP.
             </p>
 
-            <h3>The Sender Reputation Score</h3>
+            <h3>Оценка Репутации Отправителя</h3>
             <p>
-            Your domain and IP history determine your reputation score. We implement rigorous list cleaning and double-opt-in processes to minimize spam complaints and maintain a pristine sending reputation.
+            История Вашего домена и IP-адреса определяет Ваш рейтинг репутации. Мы внедряем тщательную чистку списка и процессы двойного подтверждения подписки (double-opt-in), чтобы минимизировать жалобы на спам и поддерживать безупречную репутацию отправителя.
             </p>
 
-            <h3>Authentication</h3>
+            <h3>Аутентификация</h3>
             <p>
-            These are mandatory technical standards that prove you are who you say you are. We ensure these protocols are correctly set up, dramatically reducing the likelihood of being flagged as a spoofed sender.
+            Это обязательные технические стандарты, которые доказывают, что Вы являетесь тем, кем представляетесь. Мы гарантируем правильную настройку этих протоколов, что резко снижает вероятность того, что Вас пометят как поддельного отправителя.
             </p>
 
           `
     },
     2: {
-        title: "Using Real-Time Behavior to Build Unique Email Journeys",
+        title: "Использование Поведения в Реальном Времени для Создания Уникальных Email-Путешествий",
         content: `
-            <h3>Triggering Purchase Intent Indicators</h3>
+            <h3>Запуск Индикаторов Намерения Купить</h3>
             <p>
-            We set up behavioral triggers for high-intent actions, such as viewing a product three times in 24 hours or spending five minutes on the pricing page. This triggers an immediate, relevant, non-intrusive follow-up email.
+            Мы настраиваем поведенческие триггеры для действий с высоким намерением, таких как просмотр продукта три раза за 24 часа или проведение пяти минут на странице с ценами. Это запускает немедленное, релевантное, ненавязчивое последующее электронное письмо.
             </p>
 
-            <h3>Dynamic Product Recommendation Blocks</h3>
+            <h3>Блоки Динамических Рекомендаций Продуктов</h3>
             <p>
-            The product grid within the email is dynamically filled based on the recipient's browsing history or past purchases, offering highly relevant cross-sells or upgrades, drastically outperforming static promotions.
+            Сетка продуктов внутри письма динамически заполняется на основе истории просмотров или прошлых покупок получателя, предлагая высокорелевантные кросс-продажи или обновления, что значительно превосходит статичные рекламные акции.
             </p>
 
-            <h3>The Preference Center as a Data Hub</h3>
+            <h3>Центр Предпочтений как Концентратор Данных</h3>
             <p> 
-            We transform the unsubscribe page into a preference center, letting users select desired frequency, content type, and topics. This voluntary segmentation improves engagement and reduces opt-outs significantly.
+            Мы преобразуем страницу отписки в центр предпочтений, позволяя пользователям выбирать желаемую частоту, тип контента и темы. Эта добровольная сегментация значительно улучшает вовлеченность и сокращает количество отписок.
             </p>`
     },
     3: {
-        title: "Mapping Revenue Opportunities Across the Entire Customer Journey",
+        title: "Сопоставление Возможностей Получения Дохода по Всему Пути Клиента",
         content: `
-            <h3>The High-Converting Abandoned Cart Flow</h3>
+            <h3>Последовательность с Высокой Конверсией для Брошенной Корзины</h3>
             <p>
-            This critical sequence uses a 3-email structure: reminder, objection handling (free shipping/social proof), and final offer. It captures an average of 15-20% of otherwise lost sales.
+            Эта критически важная последовательность использует структуру из 3 писем: напоминание, обработка возражений (бесплатная доставка/социальное доказательство) и финальное предложение. Она захватывает в среднем 15-20% продаж, которые в противном случае были бы потеряны.
             </p>
 
-            <h3>Post-Purchase Upsell and Onboarding</h3>
+            <h3>Допродажа (Upsell) и Онбординг после Покупки</h3>
             <p>
-            Immediately following a purchase, we deploy a sequence focusing on usage tips, product education, and a timely, relevant offer for a complementary product, driving faster adoption and increasing AOV
+            Сразу после покупки мы запускаем последовательность, сфокусированную на советах по использованию, обучении продукту и своевременном, релевантном предложении дополнительного продукта, что ускоряет принятие и увеличивает AOV (средний чек).
             </p>
 
-            <h3>The Sunset and Reactivation Strategy</h3>
+            <h3>Стратегия 'Заката' (Sunset) и Реактивации</h3>
             <p>
-            We prevent list decay by identifying dormant users (no clicks/opens in 90 days). The "Sunset" flow attempts to reactivate them with special offers; those who fail to engage are safely removed to protect deliverability.
+            Мы предотвращаем устаревание списка, выявляя неактивных пользователей (нет кликов/открытий за 90 дней). Последовательность 'Закат' пытается реактивировать их специальными предложениями; те, кто не реагирует, безопасно удаляются для защиты доставляемости.
             </p> `
     },
     4: {
-        title: "Triggering Psychological Open Rates",
+        title: "Запуск Психологических Показателей Открытия",
         content: `
-            <h3>Harnessing the Power of Specificity</h3>
+            <h3>Использование Силы Специфики</h3>
             <p>
-            Generic statements fail. We use numbers, deadlines, and precise details in the subject line (e.g., "7 days left," "15% off only for you") to establish concrete value and enforce a sense of limited opportunity.
-            <p>
-
-            <h3>The Curiosity Gap Principle</h3>
-            <p>
-            We strategically withhold a critical piece of information, creating a gap between what the recipient knows and what they desperately want to know. This powerful technique exploits human nature to compel the open.
+            Общие утверждения не работают. Мы используем числа, сроки и точные детали в теме письма (например, "Осталось 7 дней", "15% скидка только для Вас"), чтобы установить конкретную ценность и создать ощущение ограниченной возможности.
             <p>
 
-            <h3>Mobile-Optimized Preheader Synergy</h3>
+            <h3>Принцип Пробела Любопытства</h3>
             <p>
-            The subject line and preheader must work as one cohesive sentence or idea. Since mobile displays are brief, we utilize the preheader space to provide essential context or social proof, completing the hook started in the subject line.
+            Мы стратегически скрываем важную часть информации, создавая разрыв между тем, что получатель знает, и тем, что он отчаянно хочет узнать. Эта мощная техника использует человеческую натуру, чтобы принудить к открытию.
+            <p>
+
+            <h3>Синергия Заголовка, Оптимизированного для Мобильных Устройств</h3>
+            <p>
+            Тема письма и предварительный заголовок (preheader) должны работать как единое целое. Поскольку мобильные дисплеи ограничены, мы используем пространство предварительного заголовка для предоставления важного контекста или социального доказательства, завершая "крючок", начатый в теме.
             </p>
             `
     }
     ,
     5: {
-        title: "Advanced Lead Scoring Based on Content Consumption",
+        title: "Продвинутая Оценка Лидов на Основе Потребления Контента",
         content: `
-            <h3>Tiered Content Scoring</h3>
+            <h3>Многоуровневая Оценка Контента</h3>
             <p>
-            We score interactions based on the content tier: 1 point for a blog view, 5 points for a Whitepaper download, and 10 points for clicking a "Request a Demo" button. This cumulative score determines the lead's sales readiness.
+            Мы оцениваем взаимодействие на основе уровня контента: 1 балл за просмотр блога, 5 баллов за скачивание Whitepaper (отчета) и 10 баллов за нажатие кнопки "Запросить демо". Этот суммарный балл определяет готовность лида к продаже.
 </p>
 
-            <h3>Disqualifying Negative Engagement</h3>
+            <h3>Дисквалификация Негативного Взаимодействия</h3>
             <p>
-            Tracking negative signals, such as clicking an "Unsubscribe" button or not opening a high-priority email, triggers a deduction in the lead score. This prevents the sales team from wasting time on disengaged prospects.
+            Отслеживание негативных сигналов, таких как нажатие кнопки "Отписаться" или неоткрытие высокоприоритетного электронного письма, вызывает вычет баллов лида. Это предотвращает трату времени отделом продаж на невовлеченных потенциальных клиентов.
             </p>
 
-            <h3>The MQL Handover Automation</h3>
+            <h3>Автоматизация Передачи MQL</h3>
             <p>
-            Once a lead crosses a predefined score threshold (e.g., 50 points), an automated trigger instantly sends an internal notification to the sales team, along with the full history of the lead's email engagement, ensuring timely follow-up.
+            Как только лид пересекает заранее определенный порог баллов (например, 50 баллов), автоматический триггер мгновенно отправляет внутреннее уведомление отделу продаж вместе с полной историей вовлеченности лида по электронной почте, обеспечивая своевременное последующее действие.
             </p>
               `
     },
     6: {
-        title: "The Content Value Matrix",
+        title: "Матрица Ценности Контента",
         content: `
-            <h3>Balancing Promotional vs. Educational Content</h3>
+            <h3>Баланс между Рекламным и Образовательным Контентом</h3>
             <p>
-            We enforce a strict ratio, typically 1:3 (one promotional email for every three educational or relationship-building emails). This maintains the perception of the sender as a helpful partner, not just a seller.
+            Мы соблюдаем строгое соотношение, обычно 1:3 (одно рекламное письмо на каждые три образовательных или развивающих отношения письма). Это сохраняет восприятие отправителя как полезного партнера, а не просто продавца.
             </p>
 
-            <h3>Frequency Capping Per Segment</h3>
+            <h3>Ограничение Частоты Отправки по Сегментам</h3>
             <p>
-            Instead of a single frequency for the entire list, we define a maximum send frequency for individual segments (e.g., Active Buyers get more, Cold Leads get less). This prevents over-mailing and protects deliverability.
+            Вместо единой частоты для всего списка мы определяем максимальную частоту отправки для отдельных сегментов (например, Активные Покупатели получают больше, Холодные Лиды получают меньше). Это предотвращает чрезмерную рассылку и защищает доставляемость.
             </p>
 
-            <h3>Automated A/B/C Testing of Content Types</h3>
+            <h3>Автоматическое A/B/C Тестирование Типов Контента</h3>
             <p> 
-            We continuously test which type of content (Video link, Long-form text, or Infographic) performs best for different segments. This ensures content fatigue is actively monitored and countered by adapting the format to audience preference.
+            Мы постоянно тестируем, какой тип контента (видеоссылка, длинный текст или инфографика) работает лучше всего для разных сегментов. Это гарантирует активный мониторинг и противодействие "усталости от контента" путем адаптации формата к предпочтениям аудитории.
             </p>`
     }
 };
