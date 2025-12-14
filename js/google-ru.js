@@ -160,114 +160,114 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Strategic Input for Algorithmic Success",
+        title: "Стратегический Ввод Данных для Алгоритмического Успеха",
         content: `
             <p>
-            Performance Max campaigns are powerful but opaque. Success lies not in controlling the algorithm, but in mastering the input: the quality of your asset groups, audience signals, and product feeds determine the profitability of the output.
+            Кампании Performance Max мощные, но непрозрачные. Успех заключается не в контроле алгоритма, а в мастерстве ввода данных: качество Ваших групп объектов, сигналов аудитории и фидов продуктов определяет прибыльность результата.
             </p>
 
-            <h3>The Crucial Role of Audience Signals</h3>
+            <h3>Ключевая Роль Сигналов Аудитории</h3>
             <p>
-            PMax uses audience signals (custom segments, past purchasers) as a guide, not a constraint. We optimize these signals weekly to point the machine toward your highest-value customers, drastically improving learning phase efficiency.
+            PMax использует сигналы аудитории (пользовательские сегменты, прошлые покупатели) как ориентир, а не ограничение. Мы еженедельно оптимизируем эти сигналы, чтобы направить машину к Вашим наиболее ценным клиентам, радикально повышая эффективность фазы обучения.
             </p>
 
-            <h3>Maximizing Asset Group Profitability</h3>
+            <h3>Максимизация Прибыльности Групп Объектов</h3>
             <p>
-            Instead of generic asset groups, we segment assets by theme, product category, or funnel stage. This allows us to dedicate specific budget splits and messaging that resonate powerfully with distinct customer intents.
+            Вместо общих групп объектов, мы сегментируем их по темам, категориям продуктов или этапам воронки. Это позволяет нам выделять определенные бюджетные распределения и сообщения, которые мощно резонируют с конкретными намерениями клиентов.
             </p>
 
             `
     },
     2: {
-        title: "Structuring Campaigns Around the Buyer's Journey, Not Just Phrases",
+        title: "Структурирование Кампаний Вокруг Пути Покупателя, а Не Просто Фраз",
         content: `
-            <h3>The 'Know' Phase Strategy</h3>
+            <h3>Стратегия Фазы 'Знаю' (Know)</h3>
             <p>
-            Keywords here are broad ("what is X"). We use lower bids and informational ad copy linked to educational blog content. This captures leads early in the funnel without overspending on low-intent clicks.
+            Ключевые слова здесь широкие ("что такое X"). Мы используем более низкие ставки и информационный рекламный текст, связанный с образовательным контентом блога. Это захватывает лидов на ранних этапах воронки, не перерасходуя средства на клики с низким намерением.
             </p>
 
-            <h3>The 'Buy' Phase Strategy</h3>
+            <h3>Стратегия Фазы 'Покупаю' (Buy)</h3>
             <p>
-            Keywords here are specific ("buy product X online"). We use high bids, urgent, direct-response ad copy, and link directly to the checkout page, maximizing the immediate conversion opportunity.
+            Ключевые слова здесь конкретные ("купить товар X онлайн"). Мы используем высокие ставки, срочный рекламный текст прямого отклика и прямую ссылку на страницу оформления заказа, максимизируя возможность немедленной конверсии.
             </p>
 
-            <h3>Dynamic Bid Adjustments by Intent</h3>
+            <h3>Динамическая Корректировка Ставок по Намерению</h3>
             <p>
-            By isolating intent groups into separate campaigns, we can apply advanced Smart Bidding strategies (Target ROAS/CPA) tailored to the expected conversion value of that specific user cluster, ensuring budget efficiency.
+            Изолируя группы намерений в отдельные кампании, мы можем применять продвинутые стратегии Smart Bidding (Целевая ROAS/CPA), адаптированные к ожидаемой ценности конверсии этого конкретного кластера пользователей, обеспечивая эффективность бюджета.
             </p>
              `
     },
     3: {
-        title: "Advanced Feed Manipulation for ROAS",
+        title: "Продвинутое Манипулирование Фидом для ROAS",
         content: `
-            <h3>Dynamic Title Augmentation</h3>
+            <h3>Динамическое Дополнение Заголовков</h3>
             <p>
-            We prepend high-value, high-intent modifiers (e.g., "Free Shipping," "Luxury," "Cheap") to product titles based on category and seasonality, making your listing stand out against competitors in search results.
+            Мы добавляем высокоценные модификаторы высокого намерения (например, "Бесплатная Доставка", "Люкс", "Дешево") к заголовкам товаров в зависимости от категории и сезонности, делая Ваше объявление выделяющимся среди конкурентов в результатах поиска.
             </p>
 
-            <h3>Custom Label Segmentation for Bidding</h3>
+            <h3>Сегментация по Пользовательским Меткам для Назначения Ставок</h3>
             <p>
-            Using custom labels (e.g., high_margin, slow_mover, seasonal_product), we create granular bidding segments within the campaign structure, ensuring we spend aggressively only on items that deliver the highest profit.
+            Используя пользовательские метки (например, high_margin, slow_mover, seasonal_product), мы создаем гранулярные сегменты назначения ставок в структуре кампании, гарантируя, что мы агрессивно тратим только на те товары, которые приносят самую высокую прибыль.
             </p>
 
-            <h3>Excluding Wasted Spend via Feed Rules</h3>
+            <h3>Исключение Напрасных Расходов Через Правила Фида</h3>
            <p>
-           We use feed rules to suppress products that are low-stock, zero-profit, or historically low-converting before they even hit the campaign, ensuring 100% of the budget is focused on viable inventory.
+           Мы используем правила фида для подавления товаров с низким запасом, нулевой прибылью или исторически низкой конверсией до того, как они попадут в кампанию, гарантируя, что 100% бюджета сосредоточено на жизнеспособном инвентаре.
            </p>
              `
     },
     4: {
-        title: "Why Accurate Sales Data is Your Biggest Advantage",
+        title: "Почему Точные Данные о Продажах — Ваше Главное Преимущество",
         content: `
-            <h3>Accurate Offline Conversion Tracking</h3>
+            <h3>Точное Отслеживание Офлайн-Конверсий</h3>
             <p>
-            Critical for businesses with a lengthy sales cycle or B2B components. We track leads generated online but closed offline, feeding that true value back to Google Ads for superior optimization.
+            Критично для бизнесов с длительным циклом продаж или B2B компонентами. Мы отслеживаем лиды, сгенерированные онлайн, но закрытые офлайн, передавая эту истинную ценность обратно в Google Ads для превосходной оптимизации.
             </p>
 
-            <h3>Improved Smart Bidding Performance</h3>
+            <h3>Улучшенная Производительность Smart Bidding</h3>
             <p>
-            When Google's algorithms receive more accurate and comprehensive conversion data, they become exponentially better at predicting which users are most likely to convert, leading to higher ROAS at scale.
+            Когда алгоритмы Google получают более точные и всеобъемлющие данные о конверсиях, они становятся экспоненциально лучше в прогнозировании того, какие пользователи с наибольшей вероятностью совершат конверсию, что приводит к более высокому ROAS в масштабе.
             </p>
 
-            <h3>Privacy-Compliant Data Recovery</h3>
+            <h3>Восстановление Данных с Соблюдением Конфиденциальности</h3>
            <p>
-           Enhanced Conversions uses secure, one-way hashing of customer data, maintaining full compliance with modern privacy standards while restoring valuable data signals that privacy changes previously eliminated.
+           Enhanced Conversions использует безопасное одностороннее хеширование данных клиентов, поддерживая полное соответствие современным стандартам конфиденциальности, восстанавливая при этом ценные сигналы данных, которые ранее были исключены из-за изменений в политике конфиденциальности.
            </p>`
     },
     5: {
-        title: "Customized Scripts for Efficiency",
+        title: "Пользовательские Скрипты для Эффективности",
         content: `
-            <h3>Automated Budget Guardrails</h3>
+            <h3>Автоматизированные Ограничители Бюджета</h3>
             <p>
-            Scripts are used to monitor daily spend across all campaigns and pause low-performing keywords or raise bids on high-performing ones only when the daily budget is approaching a pre-set threshold.
+            Скрипты используются для мониторинга ежедневных расходов по всем кампаниям и приостановки низкоэффективных ключевых слов или повышения ставок по высокоэффективным только тогда, когда дневной бюджет приближается к заданному порогу.
             </p>
 
-            <h3>Advanced Quality Score Monitoring</h3>
+            <h3>Продвинутый Мониторинг Показателя Качества (Quality Score)</h3>
             <p>
-            A script can be set up to flag any keyword whose Quality Score drops below a critical level (e.g., 4/10) and automatically add it to a custom report or even trigger specific optimization actions.
+            Скрипт может быть настроен на пометку любого ключевого слова, чей Показатель Качества падает ниже критического уровня (например, 4/10), и автоматически добавлять его в пользовательский отчет или даже запускать конкретные действия по оптимизации.
             </p>
 
-            <h3>Weather and Time-Based Bidding</h3>
+            <h3>Назначение Ставок на Основе Погоды и Времени</h3>
             <p>
-            For relevant industries (e.g., HVAC, fashion), scripts can adjust bids dynamically. For example, boosting bids on umbrella keywords only when the local weather forecast predicts rain.
+            Для соответствующих отраслей (например, HVAC, мода) скрипты могут динамически корректировать ставки. Например, повышая ставки по ключевым словам, связанным с зонтами, только когда местный прогноз погоды предсказывает дождь.
             </p> `
     },
     6: {
-        title: "Using Search Intent to Target YouTube Viewers",
+        title: "Использование Намерений Поиска для Таргетинга Зрителей YouTube",
         content: `
-            <h3>The Retargeting Accelerator</h3>
+            <h3>Ускоритель Ретаргетинга</h3>
             <p>
-            Users who searched for a generic "problem keyword" but did not convert are immediately added to a YouTube audience list. They are then served a video ad explaining your product as the solution, significantly accelerating their path to purchase.
+            Пользователи, которые искали общее "проблемное ключевое слово", но не совершили конверсию, немедленно добавляются в список аудитории YouTube. Затем им показывается видеообъявление, объясняющее Ваш продукт как решение, что значительно ускоряет их путь к покупке.
             </p>
 
-            <h3>Competitive Conquesting via Video</h3>
+            <h3>Конкурентное Завоевание через Видео</h3>
             <p>
-            We create custom segments of users who searched for a competitor's exact brand name, then serve them persuasive video ads on YouTube that highlight your product’s superior features, effectively stealing market share.
+            Мы создаем сегменты пользователей, которые искали точное название бренда конкурента, а затем показываем им видеообъявления на YouTube, подчеркивающие превосходные характеристики Вашего продукта, эффективно отбирая долю рынка.
             </p>
 
-            <h3>Sequence-Based Funneling</h3>
+            <h3>Воронка на Основе Последовательности</h3>
             <p>
-            Using sequential video ad targeting, we ensure a user first sees a brand awareness video on YouTube, then, after searching for relevant keywords, is shown a direct-response video ad featuring a limited-time offer.
+            Используя последовательный таргетинг видеообъявлений, мы гарантируем, что пользователь сначала увидит видео для осведомленности о бренде на YouTube, а затем, после поиска релевантных ключевых слов, ему будет показано видеообъявление прямого отклика, содержащее ограниченное по времени предложение.
             </p>  `
     }
 };
