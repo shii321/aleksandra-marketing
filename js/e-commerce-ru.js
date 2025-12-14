@@ -318,113 +318,114 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Why Headless Architecture is the Next Standard",
+        title: "Почему 'Headless' Архитектура — Новый Стандарт",
         content: `
             <p>
-            Monolithic e-commerce platforms restrict creativity and slow down deployment. Adopting a headless, API-first approach allows businesses to use the best-of-breed tools (CMS, payment, search) for every function while maintaining a single backend logic.
+            Монолитные платформы электронной коммерции ограничивают креативность и замедляют развертывание. Переход к 'headless' (безголовому), API-ориентированному подходу позволяет компаниям использовать лучшие в своем классе инструменты (CMS, платежи, поиск) для каждой функции, сохраняя при этом единую логику бэкенда.
             </p>
 
-            <h3>Speed and Performance Mastery</h3>
+            <h3>Мастерство Скорости и Производительности</h3>
             <p>
-            By serving static content via a separate frontend (like React or Vue), headless systems eliminate dependency slowdowns, drastically improving site speed, which is a critical factor for both SEO ranking and mobile conversion rates.
+            Обслуживая статический контент через отдельный фронтенд (например, React или Vue), headless-системы устраняют замедления, вызванные зависимостями, радикально повышая скорость сайта, что является критическим фактором как для SEO-ранжирования, так и для мобильных коэффициентов конверсии.
             </p>
 
-            <h3>Seamless Multi-Channel Deployment</h3>
+            <h3>Бесшовное Многоканальное Развертывание</h3>
             <p>
-            Use the same core product data and checkout logic to power a traditional website, a progressive web app (PWA), and third-party marketplaces. This centralizes management while offering tailored experiences across all channels.
+            Используйте одни и те же основные данные о продуктах и логику оформления заказа для питания традиционного веб-сайта, прогрессивного веб-приложения (PWA) и сторонних торговых площадок. Это централизует управление, предлагая при этом индивидуальный опыт на всех каналах.
             </p>
              `
     },
     2: {
-        title: "Transforming Search from a Feature into a Sales Mechanism",
+        title: "Превращение Поиска из Функции в Механизм Продаж",
         content: `
-            <h3>Intent-Based Query Interpretation</h3>
+            <h3>Интерпретация Запросов на Основе Намерений</h3>
             <p>
-            The system interprets natural language and context (e.g., distinguishing "summer dress" from "cocktail dress") to display perfectly matched product categories, often before the user finishes typing.
+            Система интерпретирует естественный язык и контекст (например, различая "летнее платье" и "коктейльное платье") для отображения идеально соответствующих категорий продуктов, часто еще до того, как пользователь закончит ввод.
             </p>
 
-            <h3>Automated Merchandising Logic</h3>
+            <h3>Автоматизированная Логика Мерчандайзинга</h3>
             <p>
-            Search results can be dynamically re-ranked based on real-time inventory, profit margin, seasonal trends, and individual user history. This ensures the most profitable and relevant products always appear at the top.
+            Результаты поиска могут динамически переранжироваться на основе данных о запасах в реальном времени, марже прибыли, сезонных тенденциях и индивидуальной истории пользователя. Это гарантирует, что самые прибыльные и релевантные продукты всегда появляются вверху.
             </p>
 
-            <h3>Visual Search and Personalized Filters</h3>
-            <p>Enabling users to upload an image to find similar products, combined with hyper-personalized filters (e.g., "new arrivals in my size"), drastically streamlines the path to purchase and boosts cart additions.
+            <h3>Визуальный Поиск и Персонализированные Фильтры</h3>
+            <p>
+            Предоставление пользователям возможности загрузить изображение для поиска похожих товаров в сочетании с гиперперсонализированными фильтрами (например, "новые поступления моего размера") кардинально упрощает путь к покупке и увеличивает количество добавлений в корзину.
             </p>
             `
     },
     3: {
-        title: "E-commerce and ERP as a Single System",
+        title: "E-commerce и ERP как Единая Система",
         content: `
-            <h3>Real-Time Inventory Accuracy</h3>
+            <h3>Точность Запасов в Реальном Времени</h3>
             <p>
-            When an order is placed on the website, the ERP instantly allocates the stock. This prevents overselling, reduces backorder risk, and ensures customer trust, especially crucial for businesses with multiple warehouses.
+            Когда заказ размещается на веб-сайте, ERP мгновенно резервирует товар. Это предотвращает продажу отсутствующих товаров, снижает риск отложенных заказов и обеспечивает доверие клиентов, что особенно важно для предприятий с несколькими складами.
             </p>
 
-            <h3>Automated Order-to-Cash Cycle</h3>
+            <h3>Автоматизированный Цикл "Заказ к Наличным" (Order-to-Cash)</h3>
             <p>
-            Integration automates the entire process: order entry, credit checks, invoice generation, and financial reconciliation. This cuts fulfillment time from hours to minutes, freeing up operational staff.
+            Интеграция автоматизирует весь процесс: ввод заказа, проверки кредита, генерация счета-фактуры и финансовая сверка. Это сокращает время выполнения заказа с часов до минут, высвобождая операционный персонал.
             </p>
 
-            <h3>Dynamic, Segmented Pricing</h3>
+            <h3>Динамическое, Сегментированное Ценообразование</h3>
             <p>
-            Pricing rules defined in the ERP (e.g., volume discounts, regional taxes, loyalty tiers) are instantly reflected on the E-commerce site. This ensures pricing consistency and allows for rapid execution of complex B2B or B2C pricing strategies.
-            </p
+            Правила ценообразования, определенные в ERP (например, скидки за объем, региональные налоги, уровни лояльности), мгновенно отражаются на сайте электронной коммерции. Это обеспечивает согласованность цен и позволяет быстро реализовывать сложные B2B или B2C ценовые стратегии.
+            </p>
             > `
     },
     4: {
-        title: "Architecting Loyalty Programs That Drive Profit",
+        title: "Разработка Программ Лояльности, Приносящих Прибыль",
         content: `
-            <h3>Rewarding Non-Transactional Actions</h3>
+            <h3>Вознаграждение Нетранзакционных Действий</h3>
             <p>
-            Loyalty points can be awarded for completing a profile, writing a review, sharing a product on social media, or referring a friend. This encourages valuable user activity that contributes to brand growth, not just immediate sales.
+            Баллы лояльности могут начисляться за заполнение профиля, написание отзыва, публикацию продукта в социальных сетях или привлечение друга. Это поощряет ценную активность пользователей, которая способствует росту бренда, а не только немедленным продажам.
             </p>
 
-            <h3>Tiered Program Automation</h3>
+            <h3>Автоматизация Уровневых Программ</h3>
             <p>
-            Based on custom metrics (e.g., total spend over 12 months, number of purchases), the system automatically promotes customers to Gold or Platinum tiers, granting them dynamic benefits like early access or free shipping, all managed within the platform.
+            На основе пользовательских метрик (например, общие расходы за 12 месяцев, количество покупок) система автоматически продвигает клиентов до уровней Gold или Platinum, предоставляя им динамические преимущества, такие как ранний доступ или бесплатная доставка, и все это управляется внутри платформы.
             </p>
 
-            <h3>Personalized Redemption Options</h3>
+            <h3>Персонализированные Варианты Использования Бонусов</h3>
             <p>
-            Instead of generic discounts, customers can use loyalty currency to unlock highly personalized experiences, such as a custom-curated bundle, a donation to charity, or exclusive access to limited edition products, driving emotional connection.
+            Вместо общих скидок клиенты могут использовать валюту лояльности для получения высокоперсонализированного опыта, такого как индивидуально подобранный комплект, пожертвование на благотворительность или эксклюзивный доступ к товарам ограниченной серии, что способствует эмоциональной связи.
             </p>
             `
     },
     5: {
-        title: "From Cart to Cash",
+        title: "От Корзины до Кассы",
         content: `
-            <h3>One-Page vs. Multi-Step Testing</h3>
+            <h3>Тестирование Одностраничного и Многошагового Оформления</h3>
             <p>
-            We implement and A/B test various checkout architectures to determine the optimal layout for your specific demographic, often resulting in a simplified, single-page process that requires minimal clicks and data entry.
+            Мы внедряем и A/B тестируем различные архитектуры оформления заказа, чтобы определить оптимальный макет для вашей конкретной демографической группы, что часто приводит к упрощенному, одностраничному процессу, требующему минимального количества кликов и ввода данных.
             </p>
 
-            <h3>Trust Signals and Security Assurance</h3>
+            <h3>Сигналы Доверия и Гарантия Безопасности</h3>
             <p>
-            Integrating clear, prominent security badges (SSL, payment provider logos) and transparent shipping/return policies directly into the checkout page builds immediate confidence, overcoming buyer hesitation at the critical payment stage.
+            Интеграция четких, заметных значков безопасности (SSL, логотипы платежных систем) и прозрачной политики доставки/возврата непосредственно на страницу оформления заказа немедленно укрепляет доверие, преодолевая нерешительность покупателя на критическом этапе оплаты.
             </p>
 
-            <h3>Smart Form Field Logic</h3>
+            <h3>Логика Умных Полей Формы</h3>
             <p>
-            Utilizing auto-fill features, recognizing past customers, and eliminating unnecessary fields (e.g., only requesting the billing address if it differs from shipping) shortens the user's input time and significantly lowers the abandonment risk.
+            Использование функций автозаполнения, распознавание прошлых клиентов и исключение ненужных полей (например, запрос платежного адреса только в том случае, если он отличается от адреса доставки) сокращает время ввода данных пользователем и значительно снижает риск отказа от покупки.
             </p>`
     },
     6: {
-        title: "Customizing E-commerce for Complex Corporate Needs",
+        title: "Адаптация E-commerce для Сложных Корпоративных Потребностей",
         content: `
-            <h3>Customer-Specific Catalogues and Pricing</h3>
+            <h3>Каталоги и Цены, Специфичные для Клиента</h3>
             <p>
-            The platform automatically recognizes the corporate buyer and displays a custom product catalogue with negotiated prices, credit terms, and purchase limits assigned to their specific account or user role.
+            Платформа автоматически распознает корпоративного покупателя и отображает индивидуальный каталог продуктов с договорными ценами, условиями кредита и лимитами покупок, назначенными их конкретной учетной записи или роли пользователя.
             </p>
 
-            <h3>Quick Order and Re-Ordering Portals</h3>
+            <h3>Порталы Быстрого и Повторного Заказа</h3>
             <p>
-            B2B buyers frequently order the same items. We develop dedicated self-service portals where clients can quickly re-order from a past list or upload a batch order via CSV, drastically cutting down procurement time.
+            B2B-покупатели часто заказывают одни и те же товары. Мы разрабатываем специализированные порталы самообслуживания, где клиенты могут быстро повторно заказать из предыдущего списка или загрузить пакетный заказ через CSV, что кардинально сокращает время закупок.
             </p>
 
-            <h3>Integrated Quoting and Approval Workflows</h3>
+            <h3>Интегрированные Рабочие Процессы Котирования и Утверждения</h3>
             <p>
-            Complex, high-value orders require internal approval. The platform includes integrated quoting systems and digital approval workflows, allowing corporate users to submit a basket for internal sign-off before converting it into a finalized order.
+            Сложные, дорогостоящие заказы требуют внутреннего утверждения. Платформа включает интегрированные системы котирования и рабочие процессы цифрового утверждения, позволяя корпоративным пользователям отправить корзину на внутреннее согласование перед ее преобразованием в окончательный заказ.
             </p> `
     }
 };
