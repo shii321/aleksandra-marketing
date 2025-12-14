@@ -261,112 +261,112 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Using Data to Forecast",
+        title: "Использование Данных для Прогнозирования",
         content: `
             <p>
-            Modern CRM systems leverage Machine Learning and deep historical data analysis, moving past simple task management to become a proactive business intelligence hub that predicts outcomes.
+            Современные CRM-системы используют машинное обучение и глубокий анализ исторических данных, превращаясь из простого средства учета в проактивный центр бизнес-аналитики, который прогнозирует результаты.
             </p>
 
-            <h3>Forecasting Future Revenue Streams</h3>
+            <h3>Прогнозирование Будущих Потоков Дохода</h3>
             <p>
-            Advanced CRM models analyze past deal velocities, lead scoring data, and sales cycle duration to generate highly accurate revenue forecasts, allowing finance and operations teams to plan resources with precision.
+            Передовые модели CRM анализируют прошлую скорость закрытия сделок, данные скоринга лидов и продолжительность цикла продаж для генерации высокоточных прогнозов доходов, что позволяет финансовым и операционным командам точно планировать ресурсы.
             </p>
 
-            <h3>The Churn Prevention Index</h3>
+            <h3>Индекс Предотвращения Оттока Клиентов</h3>
             <p>
-            By monitoring deviations in client behavior (e.g., decreased support tickets, reduced software usage, slower payment patterns), the CRM calculates a real-time 'churn risk score,' triggering proactive intervention strategies before client loss occurs.
+            Отслеживая отклонения в поведении клиентов (например, уменьшение количества обращений в поддержку, снижение использования ПО, более медленные платежи), CRM рассчитывает 'оценку риска оттока' в реальном времени, запуская проактивные стратегии вмешательства до того, как произойдет потеря клиента.
             </p>
  `
     },
     2: {
-        title: "Boosting Morale and Efficiency Through Design",
+        title: "Повышение Морального Духа и Эффективности через Дизайн",
         content: `
-            <h3>Minimizing Data Entry Friction</h3>
+            <h3>Минимизация Трения при Вводе Данных</h3>
             <p>
-            Poorly designed CRMs lead to manual fatigue and outdated records. By implementing one-click logging, smart integrations (e.g., email sync), and mobile-first input forms, data entry becomes seamless and less burdensome for busy staff.
+            Плохо спроектированные CRM приводят к рутинной усталости и устаревшим записям. Внедряя логирование в один клик, умные интеграции (например, синхронизацию электронной почты) и формы ввода, ориентированные на мобильные устройства, ввод данных становится бесшовным и менее обременительным для занятого персонала.
             </p>
 
-            <h3>Personalized User Dashboards</h3>
+            <h3>Персонализированные Панели Управления для Пользователей</h3>
             <p>
-            No two roles are alike. Sales reps need pipeline visibility, while service agents need ticket history. Designing custom, role-specific dashboards reduces clutter, increases focus, and ensures critical KPIs are always visible and actionable.
+            Нет двух одинаковых ролей. Торговым представителям нужна видимость воронки, в то время как агентам службы поддержки — история заявок. Разработка пользовательских панелей, специфичных для каждой роли, уменьшает беспорядок, повышает сосредоточенность и гарантирует, что критически важные KPI всегда видны и пригодны для принятия мер.
             </p>
 
-            <h3>Gamification of Sales Workflows</h3>
+            <h3>Геймификация Рабочих Процессов Продаж</h3>
             <p>
-            CRM can integrate competitive elements like leaderboards, virtual badges, and reward systems for timely task completion and hitting conversion milestones. This leverages intrinsic motivation, making daily CRM usage more engaging and goal-oriented.
+            CRM может интегрировать соревновательные элементы, такие как таблицы лидеров, виртуальные значки и системы вознаграждений за своевременное выполнение задач и достижение целей по конверсии. Это использует внутреннюю мотивацию, делая ежедневное использование CRM более увлекательным и ориентированным на цель.
             </p>   `
     },
     3: {
-        title: "Utilizing CRM for Deep Behavioral Segmentation",
+        title: "Использование CRM для Глубокой Поведенческой Сегментации",
         content: `
-            <h3>Micro-Segmentation by Intent</h3>
+            <h3>Микросегментация по Намерению</h3>
             <p>
-            CRM captures signals of intent, such as frequency of website visits, downloaded documents, or specific pages viewed. This allows segmentation into groups like "Pricing Curious" or "Integration Focused," enabling highly specific content delivery.
+            CRM фиксирует сигналы намерения, такие как частота посещения веб-сайта, скачанные документы или просмотренные конкретные страницы. Это позволяет сегментировать пользователей в группы, например, "Интересующиеся Ценами" или "Сфокусированные на Интеграции", обеспечивая доставку высокоспецифичного контента.
             </p>
 
-            <h3>Lifecycle Stage Automation</h3>
+            <h3>Автоматизация Стадий Жизненного Цикла</h3>
             <p>
-            Every CRM contact is mapped to a precise stage (Lead, MQL, Opportunity, Evangelist). Automation rules ensure content delivery and sales contact frequency dynamically adjust based on this stage, preventing premature sales outreach or missed follow-ups.
+            Каждый контакт в CRM сопоставляется с точной стадией (Лид, Квалифицированный лид, Возможность, Евангелист). Правила автоматизации обеспечивают динамическую корректировку доставки контента и частоты контактов с продажами на основе этой стадии, предотвращая преждевременное обращение или пропущенные последующие действия.
             </p>
 
-            <h3>Dynamic Content Insertion</h3>
+            <h3>Динамическое Внедрение Контента</h3>
             <p>
-            CRM data fields (e.g., company size, industry, recent purchase) are used to dynamically insert personalized elements into emails, landing pages, and ads, making the content feel custom-designed for the individual recipient, driving higher conversion rates.
+            Поля данных CRM (например, размер компании, отрасль, недавняя покупка) используются для динамического внедрения персонализированных элементов в электронные письма, целевые страницы и рекламу, благодаря чему контент кажется разработанным специально для конкретного получателя, что повышает коэффициенты конверсии.
             </p>
              `
     },
     4: {
-        title: "Centralizing Customer Data for Unified Business Operations",
+        title: "Централизация Клиентских Данных для Единых Бизнес-Операций",
         content: `
-            <h3>Eliminating Data Duplication and Conflict</h3>
+            <h3>Устранение Дублирования и Конфликта Данных</h3>
            <p>
-           Integrating CRM with financial and inventory systems prevents conflicting records. If a customer's address changes in the CRM, it automatically updates in the billing system, eliminating common administrative errors and customer confusion.
+           Интеграция CRM с финансовыми и инвентаризационными системами предотвращает конфликтующие записи. Если адрес клиента меняется в CRM, он автоматически обновляется в системе выставления счетов, устраняя общие административные ошибки и путаницу для клиента.
            <p>
 
-            <h3>Cross-Departmental Visibility</h3>
+            <h3>Кросс-Департаментная Видимость</h3>
             <p>
-            The sales team sees the open support tickets (from the service module), and the service team sees the customer's purchase history (from the sales module). This visibility ensures that every interaction is informed and contextually relevant.
+            Отдел продаж видит открытые заявки в службу поддержки (из сервисного модуля), а отдел обслуживания видит историю покупок клиента (из модуля продаж). Эта видимость гарантирует, что каждое взаимодействие является информированным и контекстуально релевантным.
             </p>
 
-            <h3>Holistic Customer Lifetime Value (LTV)</h3>
+            <h3>Целостная Пожизненная Ценность Клиента (LTV)</h3>
             <p>
-            By connecting marketing spend (from the ad platform), operational cost (from ERP), and revenue (from the sales pipeline) all within the CRM framework, the business can accurately calculate the true LTV and profitability of different customer segments.
+            Путем подключения маркетинговых расходов (с рекламной платформы), операционных расходов (из ERP) и доходов (из воронки продаж) в рамках CRM, бизнес может точно рассчитать истинный LTV и прибыльность различных сегментов клиентов.
             </p> `
     },
     5: {
-        title: "Automating Loyalty and Referral Programs with CRM",
+        title: "Автоматизация Программ Лояльности и Рефералов с Помощью CRM",
         content: `
-            <h3>Tracking Post-Sale Health Scores</h3>
+            <h3>Отслеживание Оценок Здоровья после Продажи</h3>
             <p>
-            After conversion, CRM monitors key health indicators (e.g., successful onboarding, feature adoption rate, frequency of logins). High scores automatically trigger requests for public reviews or case study participation.
+            После конверсии CRM отслеживает ключевые показатели "здоровья" (например, успешность онбординга, уровень принятия функций, частота входов). Высокие оценки автоматически запускают запросы на публичные отзывы или участие в кейсах.
             </p>
 
-            <h3>Automated Loyalty Tier Movement</h3>
+            <h3>Автоматизированное Перемещение по Уровням Лояльности</h3>
             <p>
-            As a customer reaches predefined spending or longevity thresholds recorded in the CRM, they are automatically moved to a higher loyalty tier, instantly granting them new perks without manual intervention from account managers.
+            Как только клиент достигает заранее определенных порогов расходов или долговечности, записанных в CRM, он автоматически переводится на более высокий уровень лояльности, мгновенно предоставляя новые привилегии без ручного вмешательства менеджеров по работе с клиентами.
             </p>
 
-            <h3>Identifying Referral Opportunities</h3>
+            <h3>Выявление Возможностей для Рефералов</h3>
             <p>
-            The CRM flags customers who have shown sustained engagement, provided positive feedback, or purchased a secondary product as ideal candidates for a referral program. This automation fuels high-quality inbound leads at low acquisition costs.
+            CRM отмечает клиентов, которые продемонстрировали устойчивую вовлеченность, предоставили положительный отзыв или купили дополнительный продукт, как идеальных кандидатов для реферальной программы. Эта автоматизация обеспечивает высококачественные входящие лиды с низкими затратами на привлечение.
             </p> `
     },
     6: {
-        title: "Maximizing ROI with Industry-Specific CRM Platforms",
+        title: "Максимизация ROI с Помощью Отраслевых CRM-Платформ",
         content: `
-            <h3>Pre-Configured Industry Workflows</h3>
+            <h3>Предварительно Настроенные Отраслевые Рабочие Процессы</h3>
             <p>
-            Vertical CRMs arrive pre-loaded with necessary sales pipelines, terminology, and legal compliance checkpoints relevant to the specific industry. For example, a financial CRM includes KYC (Know Your Customer) steps built into the lead funnel.
+            Вертикальные CRM поставляются с предварительно загруженными необходимыми воронками продаж, терминологией и контрольными точками юридического соответствия, относящимися к конкретной отрасли. Например, финансовая CRM включает шаги KYC (Знай Своего Клиента), встроенные в воронку лидов.
             </p>
 
-            <h3>Native Integration with Sector Tools</h3>
+            <h3>Нативная Интеграция с Отраслевыми Инструментами</h3>
             <p>
-            These niche systems often integrate natively with industry-specific software (e.g., MLS for real estate, EMR for healthcare), eliminating the need for complex, costly, and often fragile custom APIs.
+            Эти нишевые системы часто интегрируются нативно с отраслевым программным обеспечением (например, MLS для недвижимости, EMR для здравоохранения), что устраняет необходимость в сложных, дорогостоящих и часто нестабильных кастомных API.
             </p>
 
-            <h3>Simplified Training and Adoption</h3>
+            <h3>Упрощенное Обучение и Внедрение</h3>
             <p>
-            Because the interface, fields, and workflow language match the team's existing professional terminology, training time is drastically reduced, leading to much higher user adoption rates and a faster return on investment (ROI).
+            Поскольку интерфейс, поля и язык рабочего процесса соответствуют существующей профессиональной терминологии команды, время на обучение радикально сокращается, что приводит к гораздо более высокому уровню принятия пользователями и более быстрой окупаемости инвестиций (ROI).
             </p> `
     } 
 };

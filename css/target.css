@@ -1347,6 +1347,323 @@ body {
     letter-spacing: 1px;
 }
 
+/* Articles Section */
+.articles-section {
+    padding: 50 0px;
+    background: #1a1a1a;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Article Slider */
+.article-slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.article-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    padding: 60px 0;
+    scrollbar-width: none;
+}
+
+.article-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.article-card {
+    min-width: 450px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(102, 126, 234, 0.5);
+    box-shadow: 
+        0 0 20px rgba(102, 126, 234, 0.3),
+        0 0 40px rgba(102, 126, 234, 0.2),
+        0 0 60px rgba(102, 126, 234, 0.1),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.article-number {
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(102, 126, 234, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    line-height: 1;
+}
+
+.article-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.article-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.article-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #667eea;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: gap 0.3s ease;
+}
+
+.article-card:hover .read-more {
+    gap: 15px;
+}
+
+/* Navigation Arrows */
+.slider-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+/* Expanded Article Modal */
+.article-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+.article-modal.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    max-width: 900px;
+    margin: 80px auto;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 20px;
+    padding: 60px;
+    position: relative;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+.modal-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-content h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal-content h3::before {
+    content: '';
+    width: 4px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+/* Progress Dots */
+.slider-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(102, 126, 234, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #667eea;
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* Mobile Styles */
+/* Замени стили для .article-card на мобильных */
+
+@media (max-width: 768px) {
+    .article-slider {
+        scroll-snap-type: x mandatory;
+        padding-left: calc(50vw - 160px);
+        padding-right: calc(50vw - 160px);
+    }
+    
+    .article-card {
+        min-width: 320px;
+        min-height: auto; /* Добавь это */
+        height: auto; /* И это - чтобы высота подстраивалась */
+        max-height: 70vh; /* Ограничь максимальную высоту до 70% экрана */
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        padding: 30px; /* Уменьшил padding с 40px */
+    }
+    
+    .article-card h3 {
+        font-size: 1.5rem; /* Уменьшил с 1.8rem */
+    }
+    
+    .article-card p {
+        font-size: 0.95rem; /* Уменьшил с 1rem */
+        line-height: 1.6;
+    }
+    
+    .article-number {
+        font-size: 4rem; /* Уменьшил с 5rem */
+    }
+    
+    .article-icon {
+        width: 50px; /* Уменьшил с 60px */
+        height: 50px;
+        font-size: 25px; /* Уменьшил с 30px */
+        margin-bottom: 20px;
+    }
+    .slider-nav{
+        display: none;
+    }
+}
+
 /* Этот блок исправляет работу наведения мыши */
 .footer-legal a:hover {
     color: #00F260 !important; /* <-- Добавляем !important, чтобы перебить общее правило */
