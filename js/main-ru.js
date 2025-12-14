@@ -990,116 +990,114 @@ document.addEventListener('DOMContentLoaded', () => {
 // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Designing Psychological Scarcity for High-Value Brands",
+        title: "Разработка Психологического Дефицита для Дорогих Брендов",
         content: `
             <p>
-            Scarcity isn't just about a countdown timer; it's a strategic framework that elevates product desirability. High-end brands use controlled access and limited production to signal status and enforce immediate buyer action.
+            Дефицит (Scarcity) — это не просто таймер обратного отсчета; это стратегическая основа, которая повышает желательность продукта. Бренды высокого класса используют контролируемый доступ и ограниченное производство, чтобы сигнализировать о статусе и обеспечить немедленное действие покупателя.
             </p>
 
-            <h3>Enforcing Time-Bound Decisiveness</h3>
+            <h3>Принуждение к Решимости, Ограниченной Временем</h3>
             <p>
-            We analyze purchase inertia and deploy time-based offers that expire, using clear visual cues. This transforms passive browsing into active, urgent decision-making, significantly cutting down on cart abandonment.
+            Мы анализируем инерцию покупки и внедряем ограниченные по времени предложения, используя четкие визуальные сигналы. Это преобразует пассивный просмотр в активное, срочное принятие решений, значительно сокращая количество брошенных корзин.
             </p>
 
-            <h3>Leveraging the 'Velvet Rope' Effect</h3>
+            <h3>Использование Эффекта 'Бархатной Веревки'</h3>
             <p>
-            Implementing waitlists or tiered access (e.g., "for our top 100 clients only") creates an aura of exclusivity. This perceived difficulty of access makes the product instantly more valuable to the successful buyer.
+            Внедрение списков ожидания или многоуровневого доступа (например, "только для наших 100 лучших клиентов") создает ауру эксклюзивности. Эта воспринимаемая сложность доступа делает продукт мгновенно более ценным для успешного покупателя.
             </p>
                `
     },
     2: {
-        title: "Iterative Optimization for Predictable Growth",
+        title: "Итеративная Оптимизация для Предсказуемого Роста",
         content: `
-            <h3>A/B Testing as Release Management</h3>
+            <h3>A/B-тестирование как Управление Релизами</h3>
             <p>
-            We manage A/B tests with the rigor of software releases. Only statistically significant winners are "deployed" permanently, preventing emotional decisions and ensuring every change improves performance metrics.
+            Мы управляем A/B-тестами со строгостью релизов программного обеспечения. Только статистически значимые победители "развертываются" навсегда, предотвращая эмоциональные решения и гарантируя, что каждое изменение улучшает показатели эффективности.
             </p>
 
-            <h3>Minimizing Marketing Latency</h3>
+            <h3>Минимизация Маркетинговой Задержки (Latency)</h3>
             <p>
-            Latency is friction. We measure time-to-lead, time-to-load, and time-to-conversion, eliminating bottlenecks in the customer journey and ensuring a seamless, fast experience that prevents drop-offs.
+            Задержка — это трение. Мы измеряем время до получения лида, время загрузки и время до конверсии, устраняя узкие места в пути клиента и обеспечивая беспрепятственный, быстрый опыт, который предотвращает отказы.
             </p>
 
-            <h3>Establishing Key Performance Indicators (KPIs) as Health Checks</h3>
+            <h3>Установление Ключевых Показателей Эффективности (KPI) как Проверок Здоровья</h3>
            <p>
-           Beyond ROAS, we monitor funnel health with KPIs like conversion rate by device, scroll depth, and bounce rate. These metrics act as technical 'health checks' for the marketing pipeline, signaling potential failures immediately.
+           Помимо ROAS, мы отслеживаем "здоровье" воронки с помощью таких KPI, как коэффициент конверсии по устройству, глубина прокрутки и показатель отказов. Эти метрики действуют как технические "проверки здоровья" для маркетингового конвейера, немедленно сигнализируя о потенциальных сбоях.
            </p>
               `
     },
     3: {
-        title: "Activating the Customer Database",
+        title: "Активация Клиентской Базы Данных",
         content: `
-            <h3>Predictive Segmentation for Churn Risk</h3>
+            <h3>Прогнозируемая Сегментация для Риска Оттока</h3>
             <p>
-            We use CRM data to identify customers exhibiting behaviors associated with churn (e.g., low login frequency, reduced spend). This triggers immediate, hyper-targeted retention campaigns before the customer leaves.
+            Мы используем данные CRM для выявления клиентов, демонстрирующих поведение, связанное с оттоком (например, низкая частота входа в систему, сокращение расходов). Это запускает немедленные, гипертаргетированные кампании по удержанию, прежде чем клиент уйдет.
             </p>
 
-            <h3>Personalizing the Next-Best-Offer</h3>
+            <h3>Персонализация Следующего Лучшего Предложения</h3>
             <p>
-            Based on past purchases and browsing data stored in the CRM, we dynamically suggest the next most logical product or service the customer needs, significantly increasing repeat purchase rates.
+            На основе прошлых покупок и данных о просмотре, хранящихся в CRM, мы динамически предлагаем следующий, наиболее логичный продукт или услугу, в которой нуждается клиент, что значительно увеличивает частоту повторных покупок.
             </p>
 
 
-            <h3>Lifecycle Automation Beyond Email</h3>
+            <h3>Автоматизация Жизненного Цикла За Пределами Email</h3>
             <p>
-            CRM triggers are used to launch synchronized campaigns across multiple channels (SMS, Google Ads Retargeting, and Email), ensuring the customer receives a consistent, personalized journey regardless of where they are in the digital ecosystem.
+            Триггеры CRM используются для запуска синхронизированных кампаний по нескольким каналам (SMS, ретаргетинг Google Ads и Email), обеспечивая клиенту последовательный, персонализированный путь, независимо от того, где он находится в цифровой экосистеме.
             </p> `
     },
     4: {
-        title: "Ensuring Product-Market Fit Through Value Canvas",
+        title: "Обеспечение Соответствия Продукта Рынку Через Шаблон Ценностного Предложения",
         content: `
-            <h3>Identifying Customer 'Pains'</h3>
+            <h3>Выявление 'Болей' Клиента</h3>
             <p>
-            This step involves deeply understanding the obstacles, risks, and negative emotions a customer faces. Marketing copy should start by addressing and validating these pains before presenting the solution.
+            Этот шаг включает глубокое понимание препятствий, рисков и негативных эмоций, с которыми сталкивается клиент. Маркетинговый текст должен начинаться с обращения к этим болям и их подтверждения, прежде чем представлять решение.
             </p>
 
-            <h3>Defining the 'Gain Creators'</h3>
+            <h3>Определение 'Создателей Выгоды'</h3>
             <p>
-            We focus on how the product delivers benefits beyond the basic function. Does it save time? Make them look good? Provide status? These emotional and functional gains form the core of persuasive advertising.
+            Мы фокусируемся на том, как продукт приносит пользу, выходящую за рамки основной функции. Экономит ли он время? Заставляет ли выглядеть лучше? Предоставляет ли статус? Эти эмоциональные и функциональные выгоды составляют ядро убедительной рекламы.
             </p>
 
-            <h3>Achieving Resonance</h3>
+            <h3>Достижение Резонанса</h3>
             <p>
-            The ultimate goal is achieving 'Fit'—when your product's features perfectly match the customer's needs, pains, and gains. This alignment creates marketing messages that instantly resonate and eliminate the need for hard selling.
+            Конечная цель — достичь 'Соответствия' (Fit), когда функции Вашего продукта идеально соответствуют потребностям, болям и выгодам клиента. Это соответствие создает маркетинговые сообщения, которые мгновенно находят отклик и устраняют необходимость в агрессивных продажах.
             </p> `
     },
     5: {
-        title: "Why Trust is the Ultimate Conversion Lever",
+        title: "Почему Доверие — Это Главный Рычаг Конверсии",
         content: `
-            <h3>Radical Pricing Transparency</h3>
+            <h3>Радикальная Прозрачность Ценообразования</h3>
             <p>
-            
-
-            We eliminate hidden fees and complex pricing structures. Clear, upfront pricing builds immediate trust and reduces "sticker shock" friction at the checkout stage, significantly improving conversion rates.
+            Мы устраняем скрытые платежи и сложные структуры ценообразования. Четкое, заранее известное ценообразование немедленно укрепляет доверие и уменьшает трение, связанное с 'ценовым шоком' на этапе оформления заказа, значительно улучшая коэффициенты конверсии.
             </p>
             
 
-            <h3>Ethical Data Handling Policy</h3>
+            <h3>Политика Этичного Обращения с Данными</h3>
             <p>
-            Messaging is clear on what customer data is collected, why, and how it benefits them. Offering easy opt-outs and respecting boundaries transforms data collection from a necessary evil into a voluntary, value-added exchange.
+            Сообщения четко объясняют, какие данные клиента собираются, зачем и как это приносит ему пользу. Предложение простого отказа и уважение границ превращает сбор данных из необходимого зла в добровольный обмен ценностями.
             </p>
 
-            <h3>Leveraging Social Proof with Integrity</h3>
+            <h3>Использование Социального Доказательства с Честностью</h3>
             <p>
-            We focus on verified, detailed case studies and reviews that go beyond simple star ratings. Authentic testimonials that describe a pain point and solution are exponentially more trustworthy than generic praise.
+            Мы фокусируемся на проверенных, подробных кейсах и отзывах, которые выходят за рамки простых звездных рейтингов. Подлинные отзывы, описывающие болевую точку и решение, экспоненциально более надежны, чем общие похвалы.
             </p>  `
     },
     6: {
-        title: "Making the Customer Experience Unbreakable",
+        title: "Создание Неразрывного Клиентского Опыта",
         content: `
-            <h3>Consistent Identity Across All Touchpoints</h3>
+            <h3>Последовательная Идентичность по Всем Точкам Контакта</h3>
             <p>
-            Messaging, tone, and visual branding must be identical everywhere. This consistency reduces cognitive load for the customer and reinforces brand reliability, regardless of whether they are on a video ad or a support chat.
+            Сообщения, тон и визуальный брендинг должны быть идентичными повсюду. Эта последовательность снижает когнитивную нагрузку для клиента и укрепляет надежность бренда, независимо от того, смотрит ли он видеорекламу или общается со службой поддержки.
             </p>
 
-            <h3>Centralized Customer Context</h3>
+            <h3>Централизованный Контекст Клиента</h3>
             <p>
-            When a customer contacts support, the agent should instantly see their entire history: recent purchases, abandoned carts, and previous support tickets. This eliminates repetition and speeds up resolution, directly improving loyalty.
+            Когда клиент обращается в службу поддержки, агент должен мгновенно видеть всю его историю: недавние покупки, брошенные корзины и предыдущие обращения в поддержку. Это устраняет повторения и ускоряет разрешение проблем, напрямую повышая лояльность.
             </p>
 
-            <h3>Closing the Online-to-Offline Loop</h3>
+            <h3>Замыкание Петли 'Онлайн-в-Офлайн'</h3>
             <p>
-            We link digital actions (online loyalty points) to physical purchases (in-store redemption) and vice versa. This creates a single, holistic customer profile that maximizes data utility and allows for personalized hybrid experiences.
+            Мы связываем цифровые действия (онлайн-баллы лояльности) с физическими покупками (погашение в магазине) и наоборот. Это создает единый, целостный профиль клиента, который максимизирует полезность данных и позволяет создавать персонализированный гибридный опыт.
             </p>  `
     }
 };
