@@ -225,89 +225,89 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Designing Bots for Self-Diagnosis and Fulfillment",
+        title: "Разработка Ботов для Самодиагностики и Выполнения Задач",
         content: `
-            <p>The next generation of chatbots doesn't just route queries; they are built with deep integration into the enterprise resource planning (ERP) or customer relationship management (CRM) systems. This allows them to perform actions like processing a refund, updating an order, or even fixing a simple account setting—all automatically.
+            <p>Новое поколение чат-ботов не просто маршрутизирует запросы; они созданы с глубокой интеграцией в системы планирования ресурсов предприятия (ERP) или управления взаимоотношениями с клиентами (CRM). Это позволяет им выполнять такие действия, как обработка возврата, обновление заказа или даже исправление простой настройки учетной записи — все автоматически.
             </p>
 
-            <h3>API-First Resolution Architecture</h3>
-            <p>We design the bot using an API-first approach, ensuring every core business function is accessible via a secure, modular API. This infrastructure is the foundation for the bot’s ability to execute complex, multi-step tasks.
+            <h3>Архитектура Решений, Ориентированная на API</h3>
+            <p>Мы разрабатываем ботов, используя подход API-first, гарантируя, что каждая основная бизнес-функция доступна через безопасный, модульный API. Эта инфраструктура является основой для способности бота выполнять сложные многоэтапные задачи.
             </p>
 
-            <h3>Feedback Loop and Self-Correction</h3>
-            <p>The bot is engineered with a continuous learning loop. Each successful or unsuccessful resolution is logged and analyzed to refine future diagnostic paths, allowing the system to improve its success rate without developer retraining.
+            <h3>Петля Обратной Связи и Самокоррекция</h3>
+            <p>Бот спроектирован с непрерывным циклом обучения. Каждое успешное или неуспешное решение регистрируется и анализируется для уточнения будущих путей диагностики, что позволяет системе улучшать коэффициент успешности без переподготовки разработчиком.
             </p>
              `
     },
     2: {
-        title: "Contextual Engineering",
+        title: "Контекстуальная Инженерия",
         content: `
-            <h3>Behavioral Trigger Points and Layout Shifts</h3>
-            <p>We define precise behavioral triggers such as "three rapid navigations to the help page" or "extended time on the competitor comparison chart" that trigger an immediate change in the page layout, highlighting reassuring elements like testimonials or guarantees.
+            <h3>Поведенческие Триггерные Точки и Сдвиги Макетa</h3>
+            <p>Мы определяем точные поведенческие триггеры, такие как "три быстрых перехода на страницу справки" или "длительное время на графике сравнения с конкурентами", которые вызывают немедленное изменение макета страницы, выделяя обнадеживающие элементы, такие как отзывы или гарантии.
             </p>
 
-            <h3>The Velocity-Based Content Prioritization</h3>
-            <p>Content is assigned a velocity score. For users who exhibit fast, high-intent navigation, we push core information up the page. For slow, deliberative users, we prioritize detailed facts and social proof deeper into the structure.
+            <h3>Приоритезация Контента на Основе Скорости</h3>
+            <p>Контенту присваивается оценка скорости. Для пользователей, которые демонстрируют быструю навигацию с высоким намерением, мы выносим основную информацию выше на странице. Для медленных, обдумывающих пользователей мы приоритизируем подробные факты и социальное доказательство глубже в структуре.
             </p>
 
-            <h3>Server-Side Rendering of User Profiles</h3>
-            <p>Personalization is handled on the server side, ensuring that the fully tailored experience loads instantly. This avoids the jarring flicker associated with client-side modifications and ensures consistent user experience across all touchpoints.
+            <h3>Рендеринг Профилей Пользователей на Стороне Сервера</h3>
+            <p>Персонализация обрабатывается на стороне сервера, гарантируя, что полностью адаптированный интерфейс загружается мгновенно. Это позволяет избежать резкого мерцания, связанного с модификациями на стороне клиента, и обеспечивает согласованный пользовательский опыт во всех точках взаимодействия.
             </p>   `
     },
     3: {
-        title: "The Data Translator",
+        title: "Переводчик Данных (The Data Translator)",
         content: `
-            <h3>Protocol Mapping and Data Normalization</h3>
-            <p>The middleware is tasked with normalizing data fields from different sources, such as converting Customer_ID_SAP to client_hash_CRM, ensuring data integrity and consistency across the entire technology stack.
+            <h3>Сопоставление Протоколов и Нормализация Данных</h3>
+            <p>Промежуточное ПО (middleware) отвечает за нормализацию полей данных из разных источников, таких как преобразование Customer_ID_SAP в client_hash_CRM, обеспечивая целостность и согласованность данных во всем технологическом стеке.
             </p>
 
-            <h3>Event-Driven Microservices Architecture</h3>
-            <p>Instead of constant polling, the integration uses event-driven architecture. When a specific event occurs in System A such as "Inventory Update," a microservice instantly pushes the change only to the necessary downstream System B, reducing load and latency.
+            <h3>Архитектура Микросервисов, Управляемая Событиями</h3>
+            <p>Вместо постоянного опроса, интеграция использует архитектуру, управляемую событиями. Когда в Системе А происходит конкретное событие, такое как "Обновление Инвентаря", микросервис мгновенно передает изменение только в необходимую нисходящую Систему Б, снижая нагрузку и задержку.
             </p>
 
-            <h3>Security Layer Abstraction</h3>
-            <p>The middleware acts as a centralized security gate. Instead of configuring security rules on every legacy system individually, all external modern apps communicate only with the secure middleware layer, simplifying compliance and management.
+            <h3>Абстракция Уровня Безопасности</h3>
+            <p>Промежуточное ПО действует как централизованный шлюз безопасности. Вместо того, чтобы настраивать правила безопасности на каждой устаревшей системе индивидуально, все внешние современные приложения взаимодействуют только с безопасным уровнем промежуточного ПО, что упрощает соблюдение требований и управление.
             </p>  `
     },
     4: {
-        title: "Focus on Singular, Instantaneous Value Delivery",
+        title: "Фокус на Единственной, Мгновенной Доставке Ценности",
         content: `
-            <h3>Platform-Agnostic Embeddable Widgets</h3>
-            <p>The micro-app is coded using universal web standards to be seamlessly embedded on any platform, from a blog post to a third-party directory, maintaining brand consistency and performance regardless of the host environment.
+            <h3>Платформенно-Агностические Встраиваемые Виджеты</h3>
+            <p>Микроприложение кодируется с использованием универсальных веб-стандартов, чтобы его можно было легко встроить на любую платформу, от поста в блоге до стороннего каталога, сохраняя единообразие бренда и производительность независимо от хост-среды.
             </p>
 
-            <h3>Session-Only Data Persistence</h3>
-            <p>These utility apps are designed to be privacy-friendly by default. They handle all necessary calculations and actions within the user’s current session, minimizing data storage requirements and simplifying user consent processes.
+            <h3>Сохранение Данных Только в Течение Сеанса</h3>
+            <p>Эти служебные приложения по умолчанию разработаны с учетом конфиденциальности. Они обрабатывают все необходимые вычисления и действия в рамках текущего сеанса пользователя, минимизируя требования к хранению данных и упрощая процессы согласия пользователя.
             </p>
 
-            <h3>Attribution via Embedded Context</h3>
-            <p>Each instance of the micro-app contains hidden context parameters that tie the user's action directly back to the original source, allowing marketers to accurately measure the return on investment of embedding the tool on various external channels.
+            <h3>Атрибуция Через Встроенный Контекст</h3>
+            <p>Каждый экземпляр микроприложения содержит скрытые контекстные параметры, которые привязывают действие пользователя непосредственно к исходному источнику, позволяя маркетологам точно измерять окупаемость инвестиций от встраивания инструмента на различные внешние каналы.
             </p>    `
     },
     5: {
-        title: "Prioritizing User Autonomy Over Short-Term Conversion Hacks",
+        title: "Приоритизация Автономии Пользователя Над Краткосрочными Хаками Конверсии",
         content: `
-            <h3>Reversible Action and 'Cool-Down' Periods</h3>
-            <p>Critical actions such as permanent account deletion or major plan downgrades are designed with a temporary holding period or an easy 'undo' button, reducing accidental loss of service and improving user confidence.
+            <h3>Обратимые Действия и Периоды "Остывания"</h3>
+            <p>Критические действия, такие как безвозвратное удаление учетной записи или крупное понижение плана, разрабатываются с временным периодом ожидания или простой кнопкой "отменить", что снижает случайную потерю обслуживания и повышает доверие пользователей.
             </p>
 
-            <h3>Clarity over Cognitive Load</h3>
-            <p>Instead of using complex jargon or hiding crucial information, we use plain language and clear visual hierarchies. When displaying price, for instance, we ensure the total cost, renewal date, and cancellation policy are immediately visible, eliminating friction from confusion. </p>
+            <h3>Ясность Вместо Когнитивной Нагрузки</h3>
+            <p>Вместо использования сложного жаргона или сокрытия важной информации, мы используем простой язык и четкие визуальные иерархии. При отображении цены, например, мы гарантируем, что общая стоимость, дата продления и политика отмены сразу видны, устраняя трение от путаницы. </p>
 
-            <h3>Behavioral Nudges for Positive Outcomes</h3>
-            <p>We use positive nudges—subtle interface cues—to encourage beneficial user behavior, such as highlighting energy-saving defaults or suggesting a safer password, rather than using punitive or deceptive messaging. </p>    `
+            <h3>Поведенческие Подсказки для Положительных Результатов</h3>
+            <p>Мы используем положительные подсказки (тонкие визуальные сигналы интерфейса) для поощрения полезного поведения пользователей, такие как выделение настроек по умолчанию для экономии энергии или предложение более безопасного пароля, вместо использования карающих или обманчивых сообщений. </p>    `
     },
     6: {
-        title: "Smart Contract Commerce",
+        title: "Коммерция на Смарт-Контрактах",
         content: `
-            <h3>Verifiable Ownership through NFTs</h3>
-            <p>Unique digital assets or loyalty tiers are issued as non-fungible tokens NFTs, giving the customer provable, transferrable ownership over their reward status or exclusive content access, which dramatically increases perceived value. </p>
+            <h3>Подтверждаемая Собственность Через NFT</h3>
+            <p>Уникальные цифровые активы или уровни лояльности выпускаются как невзаимозаменяемые токены (NFT), предоставляя клиенту доказуемое, передаваемое право собственности на его статус вознаграждения или эксклюзивный доступ к контенту, что резко увеличивает воспринимаемую ценность. </p>
 
-            <h3>DLT-Based Transparent Supply Chain Tracking</h3>
-            <p>For e-commerce, we integrate a DLT solution that allows customers to publicly verify the origin, handling, and authenticity of a product, addressing critical consumer concerns about provenance and ethical sourcing directly through the platform.  </p>
+            <h3>Прозрачное Отслеживание Цепочки Поставок на Основе DLT</h3>
+            <p>Для электронной коммерции мы интегрируем решение DLT (технология распределенного реестра), которое позволяет клиентам публично проверить происхождение, обработку и подлинность продукта, решая критически важные для потребителя вопросы о происхождении и этическом снабжении непосредственно через платформу.  </p>
 
-            <h3>Decentralized Authentication and Data Vaults</h3>
-            <p>Users are offered the option to authenticate via decentralized identity solutions. Data storage is shifted towards private, encrypted vaults where the user retains the keys, allowing them to grant temporary, auditable access to the application only when necessary. </p>    `
+            <h3>Децентрализованная Аутентификация и Хранилища Данных</h3>
+            <p>Пользователям предлагается возможность аутентификации через децентрализованные решения для идентификации. Хранение данных смещается в частные, зашифрованные хранилища, где пользователь сохраняет ключи, позволяя ему предоставлять временный, поддающийся аудиту доступ к приложению только при необходимости. </p>    `
     }
 };
 
