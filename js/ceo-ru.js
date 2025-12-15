@@ -196,93 +196,93 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Prioritizing SEO for Bottom-Line Impact",
+        title: "Приоритизация SEO для Влияния на Конечную Прибыль",
         content: `
-            <p>Most audits deliver a long list of problems. A revenue-driven audit focuses exclusively on issues (like slow Core Web Vitals on high-converting pages) that directly restrict sales and scales efforts based on predicted ROI.
+            <p>Большинство аудитов предоставляют длинный список проблем. Аудит, ориентированный на доход, фокусируется исключительно на проблемах (например, медленные Core Web Vitals на высококонверсионных страницах), которые напрямую ограничивают продажи, и масштабирует усилия на основе прогнозируемого ROI.
             </p>
 
-            <h3>Mapping Technical Issues to Funnel Stages</h3>
-            <p>We segment technical debt by its effect on the user journey: Discovery (Indexation/Crawl Budget), Consideration (Page Speed/UX), and Conversion (Mobile Usability on checkout pages). This links the fix directly to the money.
+            <h3>Сопоставление Технических Проблем со Стадиями Воронки</h3>
+            <p>Мы сегментируем технический долг по его влиянию на путь пользователя: Обнаружение (Индексация/Бюджет Краулинга), Рассмотрение (Скорость Страницы/UX) и Конверсия (Удобство Использования на Мобильных Устройствах на страницах оформления заказа). Это напрямую связывает исправление с деньгами.
             </p>
 
-            <h3>Calculating the Opportunity Cost of Delay</h3>
-            <p>For every critical technical flaw, we quantify the lost revenue based on current traffic and conversion rates. This allows stakeholders to instantly see the cost of not fixing the issue, securing faster resource allocation.
+            <h3>Расчет Альтернативной Стоимости Задержки</h3>
+            <p>Для каждой критической технической ошибки мы количественно оцениваем упущенный доход на основе текущего трафика и коэффициентов конверсии. Это позволяет заинтересованным сторонам мгновенно увидеть стоимость невыполнения исправления, обеспечивая более быстрое выделение ресурсов.
             </p>
 
               `
     },
     2: {
-        title: "Entire Topic Ecosystem",
+        title: "Вся Экосистема Темы",
         content: `
-            <h3>Building the Content Hub and Cluster Model</h3>
-            <p>We design comprehensive "Hub" pages that cover a broad topic, supported by multiple "Cluster" articles that deep-dive into sub-entities. Strong internal linking connects this ecosystem, passing authority efficiently.    </p>
+            <h3>Построение Модели Контентного Хаба и Кластера</h3>
+            <p>Мы разрабатываем всеобъемлющие страницы "Хабов", которые охватывают широкую тему, поддерживаемые множеством статей "Кластеров", глубоко прорабатывающих под-сущности. Сильная внутренняя перелинковка связывает эту экосистему, эффективно передавая авторитет.    </p>
 
-            <h3>Advanced Entity Identification via NLP</h3>
-            <p>Using Natural Language Processing (NLP) tools, we identify the specific entities and semantic relationships that top-ranking content uses, ensuring your content uses the exact language and context required by the algorithm.
+            <h3>Продвинутая Идентификация Сущностей через NLP</h3>
+            <p>Используя инструменты Обработки Естественного Языка (NLP), мы определяем конкретные сущности и семантические связи, которые использует лидирующий в рейтинге контент, гарантируя, что Ваш контент использует точный язык и контекст, требуемый алгоритмом.
             </p>
 
-            <h3>The Wikipedia Strategy for Brand Trust</h3>
-            <p>We focus on gaining citations and mentions from established, highly-trusted external sources (akin to Wikipedia sources) to confirm your brand's authority and expertise in the eyes of the search engine, directly feeding the E-A-T signal.
+            <h3>Стратегия Википедии для Доверия к Бренду</h3>
+            <p>Мы фокусируемся на получении цитирования и упоминаний от авторитетных, пользующихся высоким доверием внешних источников (подобно источникам Википедии), чтобы подтвердить авторитет и экспертность Вашего бренда в глазах поисковой системы, напрямую подпитывая сигнал E-A-T.
             </p>   `
     },
     3: {
-        title: "Unlocking Speed and Crawlability",
+        title: "Раскрытие Скорости и Возможности Сканирования",
         content: `
-            <h3>Choosing the Right Rendering Strategy</h3>
-            <p>We analyze traffic, content volatility, and user intent to determine whether Server-Side Rendering (SSR) for dynamic content or Static Site Generation (SSG) for high-speed content is the optimal route for maximum SEO benefit.
+            <h3>Выбор Правильной Стратегии Рендеринга</h3>
+            <p>Мы анализируем трафик, волатильность контента и намерения пользователя, чтобы определить, что является оптимальным путем для максимальной выгоды SEO: Рендеринг на Стороне Сервера (SSR) для динамического контента или Генерация Статических Сайтов (SSG) для высокоскоростного контента.
             </p>
 
-            <h3>Measuring Time to Index (TTI) and Hydration Lag</h3>
-            <p>Traditional speed metrics aren't enough. We measure the Time to Index (the moment content is available to Googlebot) and optimize the hydration process to ensure interactivity doesn't compromise the initial crawl.
+            <h3>Измерение Времени до Индексации (TTI) и Задержки Гидрации</h3>
+            <p>Традиционных метрик скорости недостаточно. Мы измеряем Время до Индексации (момент, когда контент становится доступным для Googlebot) и оптимизируем процесс гидрации, чтобы обеспечить, что интерактивность не ставит под угрозу первоначальное сканирование.
             </p>
 
-            <h3>The Critical Role of Dynamic Rendering as a Fallback</h3>
-            <p>For complex single-page applications (SPAs), we implement dynamic rendering to serve a pre-rendered, crawlable version of the content to search bots while maintaining the client-side experience for human users.
+            <h3>Критическая Роль Динамического Рендеринга как Запасного Варианта</h3>
+            <p>Для сложных одностраничных приложений (SPA) мы внедряем динамический рендеринг, чтобы предоставить поисковым роботам предварительно отрендеренную, сканируемую версию контента, сохраняя при этом пользовательский опыт на стороне клиента.
             </p>  `
     },
     4: {
-        title: "The Art of Maximizing Dwell Time and Minimizing Bounce Rate",
+        title: "Искусство Максимизации Времени Пребывания и Минимизации Показателя Отказов",
         content: `
-            <h3>The Intent-Action Mapping Framework</h3>
-            <p>We categorize keywords into four core intents (Do, Know, Go, Buy) and align the content type, tone, and CTA (Call-to-Action) directly with that specific intent, guaranteeing immediate relevance upon clicking the search result.
+            <h3>Структура Сопоставления Намерения и Действия</h3>
+            <p>Мы классифицируем ключевые слова по четырем основным намерениям (Действие, Знание, Переход, Покупка) и согласовываем тип контента, тон и Призыв к Действию (CTA) непосредственно с этим конкретным намерением, гарантируя немедленную релевантность после клика на результат поиска.
             </p>
 
-            <h3>Optimizing Above-the-Fold for Instant Value</h3>
-            <p>The crucial first few seconds determine Dwell Time. We ruthlessly optimize the content visible "above the fold" to deliver the primary answer or value proposition immediately, preventing the user from scrolling back up to hit the back button.
+            <h3>Оптимизация Области Над Сгибом для Мгновенной Ценности</h3>
+            <p>Критические первые несколько секунд определяют Время Пребывания. Мы безжалостно оптимизируем контент, видимый "над сгибом", чтобы немедленно предоставить основной ответ или ценностное предложение, не давая пользователю прокрутить страницу вверх и нажать кнопку "Назад".
             </p>
 
-            <h3>Analyzing SERP Features for Format Cues</h3>
-            <p>Before creating content, we analyze the current SERP for dominant formats (lists, tables, videos, calculators). Mimicking the dominant format signals to Google that your content is structured in the way users expect for that query.
+            <h3>Анализ Функций SERP для Подсказок по Формату</h3>
+            <p>Перед созданием контента мы анализируем текущий SERP на предмет доминирующих форматов (списки, таблицы, видео, калькуляторы). Имитация доминирующего формата сигнализирует Google, что Ваш контент структурирован так, как ожидают пользователи для этого запроса.
             </p>   `
     },
     5: {
-        title: "Scaling Link Velocity with Newsworthy Content",
+        title: "Масштабирование Скорости Ссылок с Помощью Новостного Контента",
         content: `
-            <h3>The "Data Study" as a Linkable Asset</h3>
-            <p>We conduct unique, proprietary research or aggregate existing data to create a defensible, cite-worthy study. This asset becomes the foundation for outreach to publications looking for fresh, original data to quote.
+            <h3>"Аналитическое Исследование" как Активируемый для Ссылок Ресурс</h3>
+            <p>Мы проводим уникальные, собственные исследования или агрегируем существующие данные для создания защищаемого, достойного цитирования исследования. Этот ресурс становится основой для обращения к изданиям, ищущим свежие, оригинальные данные для цитирования.
             </p>
 
-            <h3>Hyper-Targeted Journalist Outreach</h3>
-            <p>Instead of mass emails, we identify journalists who have recently covered the exact topic of our data study. The pitch focuses purely on the unique, new value the data offers to their existing readership.
+            <h3>Гипер-Целевое Обращение к Журналистам</h3>
+            <p>Вместо массовых рассылок по электронной почте мы выявляем журналистов, которые недавно освещали точную тему нашего аналитического исследования. Обращение фокусируется исключительно на уникальной, новой ценности, которую данные предлагают их существующей аудитории.
             </p>
 
-            <h3>Maximizing Link Relevancy and Anchor Text Control</h3>
-            <p>While the links are "earned," the strategy guides the conversation to ensure the surrounding text and anchor text used by the citing publication are contextually relevant to the target money page, maximizing the link equity passed.
+            <h3>Максимизация Релевантности Ссылок и Контроля Анкорного Текста</h3>
+            <p>Несмотря на то, что ссылки "зарабатываются", стратегия направляет диалог таким образом, чтобы окружающий текст и анкорный текст, используемый цитирующим изданием, были контекстуально релевантны целевой денежной странице, максимизируя передаваемый ссылочный вес.
             </p>   `
     },
     6: {
-        title: "International SEO",
+        title: "Международное SEO",
         content: `
-            <h3>Strategic URL Structure for Global Markets</h3>
-            <p>We evaluate the trade-offs between country-code Top-Level Domains (ccTLDs), geo-targeted subdomains, and language-specific subdirectories, selecting the structure that best balances SEO authority and administrative complexity.
+            <h3>Стратегическая Структура URL для Глобальных Рынков</h3>
+            <p>Мы оцениваем компромиссы между Доменами Верхнего Уровня с Кодом Страны (ccTLD), гео-таргетированными поддоменами и подкаталогами для конкретных языков, выбирая структуру, которая наилучшим образом балансирует SEO-авторитет и административную сложность.
             </p>
 
-            <h3>Auditing and Debugging Hreflang Implementation</h3>
-            <p>The single biggest failure point in international SEO is Hreflang. We perform rigorous audits to ensure correct syntax, two-way referencing, and proper handling of regional variations (e.g., en-us vs. en-gb), including the required x-default tag.
+            <h3>Аудит и Отладка Внедрения Hreflang</h3>
+            <p>Самый большой сбой в международном SEO — это Hreflang. Мы проводим тщательные аудиты, чтобы обеспечить правильный синтаксис, двустороннюю адресацию и корректную обработку региональных вариаций (например, en-us против en-gb), включая обязательный тег x-default.
             </p>
 
-            <h3>Localized Keyword Research and Search Intent</h3>
-            <p>Translation is insufficient. We conduct native-language keyword research in each target market, recognizing that search behavior and intent often vary significantly between countries speaking the same base language.
+            <h3>Локализованный Подбор Ключевых Слов и Намерение Поиска</h3>
+            <p>Простого перевода недостаточно. Мы проводим исследование ключевых слов на родном языке на каждом целевом рынке, признавая, что поисковое поведение и намерения часто значительно различаются между странами, говорящими на одном базовом языке.
             </p>   `
     }
 };

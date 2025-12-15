@@ -476,85 +476,101 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "The Psychology of Engineered Exclusivity in Marketing",
+        title: "Психология Искусственной Эксклюзивности в Маркетинге",
         content: `
-            <p>True premium branding thrives on controlled access, not mass availability. We use strategic restraints—like timed releases or membership tiers—to make the customer feel privileged, translating exclusivity directly into higher margins and faster conversion cycles.</p>
+            <p>Истинный премиальный брендинг процветает за счет контролируемого доступа, а не массовой доступности. Мы используем стратегические ограничения — такие как релизы по времени или уровни членства — чтобы клиент чувствовал себя привилегированным, напрямую преобразуя эксклюзивность в более высокую маржу и более быстрые циклы конверсии.
+            </p>
 
-            <h3>Tiered Access and the 'Velvet Rope' Effect</h3>
-            <p>We design pricing and product tiers where the most valuable features are reserved for the highest segment, making lower-tier customers constantly aspire to upgrade, thus turning pricing into a retention tool.</p>
+            <h3>Многоуровневый Доступ и Эффект 'Бархатного Каната'</h3>
+            <p>Мы разрабатываем ценовые и продуктовые уровни, где самые ценные функции зарезервированы для самого высокого сегмента, заставляя клиентов с более низким уровнем постоянно стремиться к обновлению, что превращает ценообразование в инструмент удержания.
+            </p>
 
-            <h3>The Calculated Use of Time-Bound Releases</h3>
-            <p>Instead of permanent products, we implement seasonal or cohort-based launches. This manufactured deadline forces prospects to move quickly from consideration to transaction, dramatically cutting the sales cycle time.</p>
-        `
+            <h3>Расчетное Использование Выпусков, Ограниченных по Времени</h3>
+            <p>Вместо постоянных продуктов мы внедряем сезонные или когортные запуски. Этот искусственно созданный крайний срок заставляет потенциальных клиентов быстро переходить от рассмотрения к транзакции, что резко сокращает время цикла продаж.
+            </p>
+
+              `
     },
     2: {
-        title: "Using Your Competitor's Weight Against Them",
+        title: "Использование Веса Конкурента Против Него Самого",
         content: `
-            <h3>Mapping the Competitor's 'Sacred Cows'</h3>
-            <p>We identify areas where the market leader is heavily invested (e.g., legacy software, old customer service protocols) and cannot easily change, creating opportunities for a nimble, modernized offering.</p>
+            <h3>Картирование 'Священных Коров' Конкурента</h3>
+            <p>Мы выявляем области, в которые лидер рынка вложил значительные средства (например, устаревшее программное обеспечение, старые протоколы обслуживания клиентов) и которые он не может легко изменить, создавая возможности для гибкого, модернизированного предложения.
+            </p>
 
-            <h3>The "Anti-Feature" Value Proposition</h3>
-            <p>If a competitor boasts 50 confusing features, we market the elegance of having 5 perfect, simple features. We win by removing complexity and marketing the lack of unnecessary complexity as a core benefit.</p>
+            <h3>Ценностное Предложение "Анти-Функция"</h3>
+            <p>Если конкурент хвастается 50 запутанными функциями, мы продвигаем элегантность наличия 5 идеальных, простых функций. Мы побеждаем, устраняя сложность и рекламируя *отсутствие* ненужной сложности как основное преимущество.
+            </p>
 
-            <h3>Targeting the 'Invisible' Customer Segment</h3>
-            <p>We analyze competitor churn data and forums to find high-value customers who feel underserved or ignored by the market leader, creating highly tailored messaging specifically addressing their frustration.</p>
-        `
+            <h3>Таргетирование 'Невидимого' Сегмента Клиентов</h3>
+            <p>Мы анализируем данные об оттоке конкурентов и форумы, чтобы найти высокоценных клиентов, которые чувствуют себя обделенными или игнорируемыми лидером рынка, создавая узконаправленные сообщения, специально устраняющие их недовольство.
+            </p>
+               `
     },
     3: {
-        title: "Autonomous Marketing",
+        title: "Автономный Маркетинг",
         content: `
-            <h3>Real-Time Intent Scoring and Branching</h3>
-            <p>We implement a system that analyzes real-time user behavior (time on page, scroll depth, form interaction) to instantly score their purchase intent and automatically branch the user into the most appropriate automated nurture sequence.</p>
+            <h3>Оценка Намерения и Разветвление в Реальном Времени</h3>
+            <p>Мы внедряем систему, которая анализирует поведение пользователя в реальном времени (время на странице, глубина прокрутки, взаимодействие с формой), чтобы мгновенно оценить его намерение совершить покупку и автоматически направить пользователя в наиболее подходящую автоматизированную последовательность взращивания лидов.
+            </p>
 
-            <h3>Predictive Churn Modeling for Retention</h3>
-            <p>AI models predict which current customers are at high risk of leaving before they cancel. This triggers a proactive, personalized retention campaign (special offer, direct outreach) designed to prevent the loss.</p>
+            <h3>Прогнозное Моделирование Оттока для Удержания</h3>
+            <p>Модели ИИ предсказывают, какие текущие клиенты подвержены высокому риску ухода до того, как они отменят подписку. Это запускает проактивную, персонализированную кампанию по удержанию (специальное предложение, прямое обращение), разработанную для предотвращения потери.
+            </p>
 
-            <h3>Dynamic Content Substitution (DCS) Across Landing Pages</h3>
-            <p>Based on the referral source or demographic profile, the AI dynamically swaps out key headlines, images, and testimonials on the landing page, ensuring the highest possible message match and conversion rate for that specific visitor.</p>
-        `
+            <h3>Динамическая Замена Контента (DCS) на Целевых Страницах</h3>
+            <p>На основе источника перехода или демографического профиля ИИ динамически заменяет ключевые заголовки, изображения и отзывы на целевой странице, обеспечивая максимально возможное соответствие сообщения и коэффициент конверсии для конкретного посетителя.
+            </p> `
     },
     4: {
-        title: "The Strategic Advantage of Full Disclosure",
+        title: "Стратегическое Преимущество Полного Раскрытия Информации",
         content: `
-            <h3>Open-Source Metrics and Financial Reporting</h3>
-            <p>We advocate for sharing key performance indicators (KPIs) and sometimes even simplified financial data (revenue, operational costs) to the public, fostering an impression of genuine partnership with the customer base.</p>
+            <h3>Метрики с Открытым Исходным Кодом и Финансовая Отчетность</h3>
+            <p>Мы выступаем за публичное предоставление ключевых показателей эффективности (KPI) и иногда даже упрощенных финансовых данных (доход, операционные расходы), способствуя впечатлению подлинного партнерства с клиентской базой.
+            </p>
 
-            <h3>Pricing Demystification and Cost Breakdowns</h3>
-            <p>Instead of showing a single price, we provide a detailed, itemized breakdown of costs, explaining where the money goes. This removes the perceived "black box" of pricing and justifies premium fees.</p>
+            <h3>Демистификация Ценообразования и Разбивка Затрат</h3>
+            <p>Вместо того чтобы показывать одну цену, мы предоставляем подробную, детализированную разбивку затрат, объясняя, куда идут деньги. Это устраняет воспринимаемый "черный ящик" ценообразования и оправдывает премиальные сборы.
+            </p>
 
-            <h3>The Public Retrospective</h3>
-            <p>When a mistake happens, we advise quickly owning the error, publicly detailing what went wrong, and explaining the specific steps taken to ensure it never happens again. This dramatically improves brand resilience and loyalty.</p>
-        `
+            <h3>Публичный Ретроспективный Анализ</h3>
+            <p>Когда случается ошибка, мы советуем быстро признать ее, публично подробно описать, что пошло не так, и объяснить конкретные шаги, предпринятые для того, чтобы это не повторилось. Это значительно повышает устойчивость бренда и лояльность.
+            </p>   `
     },
     5: {
-        title: "Where Transactions Meet Education and Loyalty",
+        title: "Где Транзакции Встречаются с Образованием и Лояльностью",
         content: `
-            <h3>Content-to-Cart Seamless Integration</h3>
-            <p>We embed direct purchase points (mini-checkouts, shoppable tags) directly within educational blog posts and video tutorials, removing friction between inspiration and transaction.</p>
+            <h3>Бесшовная Интеграция "Контент-в-Корзину"</h3>
+            <p>Мы встраиваем прямые точки покупки (мини-кассы, теги для покупок) непосредственно в образовательные посты в блогах и видеоуроки, устраняя трение между вдохновением и транзакцией.
+            </p>
 
-            <h3>Community-Driven Product Development</h3>
-            <p>The active community forum is used not just for support, but as a real-time focus group for new features or products. Launching products requested by
-            the community guarantees initial sales and massive early buzz.</p>
-            <h3>The 'Subscription of Belonging' Model</h3>
-        <p>The highest LTV is achieved by selling not just a product, but access to the exclusive knowledge and support within the community, making the subscription indispensable even if the physical product is paused.</p>
-    `
-},
-6: {
-    title: "Engineering the Journey from Free User to Paid Subscriber",
-    content: `
-        <h3>Identifying the "Aha!" Moment and Gating Value</h3>
-        <p>We rigorously test to determine the exact moment when a user realizes the product is essential. Paid features are strategically placed immediately after this moment to drive instant desire to upgrade.</p>
+            <h3>Разработка Продуктов, Основанная на Сообществе</h3>
+            <p>Активный форум сообщества используется не только для поддержки, но и как фокус-группа в реальном времени для новых функций или продуктов. Запуск продуктов, запрошенных сообществом, гарантирует первоначальные продажи и массовый ранний ажиотаж.
+            </p>
 
-        <h3>Minimizing Signup and Onboarding Cognitive Load</h3>
-        <p>We ensure the initial signup process requires the absolute minimum amount of data (often just an email). The entire onboarding is simplified, focusing only on the single action needed for the first success.</p>
+            <h3>Модель 'Подписки на Принадлежность'</h3>
+            <p>Самая высокая Пожизненная Ценность (LTV) достигается путем продажи не просто продукта, а доступа к эксклюзивным знаниям и поддержке внутри сообщества, что делает подписку незаменимой, даже если физический продукт приостановлен.
+            </p>     `
+    },
+    6: {
+        title: "Проектирование Пути от Бесплатного Пользователя к Платному Подписчику",
+        content: `
+            <h3>Идентификация Момента "Ага!" и Ограничение Ценности</h3>
+            <p>Мы тщательно тестируем, чтобы определить точный момент, когда пользователь осознает, что продукт необходим. Платные функции стратегически размещаются сразу после этого момента, чтобы вызвать мгновенное желание обновиться.
+            </p>
 
-        <h3>The "Usage Limit, Not Feature Limit" Strategy</h3>
-        <p>Instead of locking features, we limit volume (e.g., 5 projects or 100 contacts). This allows the user to experience the full power of the software, but forces an upgrade only when their success requires higher usage capacity.</p>
-    `
-}};
+            <h3>Минимизация Когнитивной Нагрузки при Регистрации и Адаптации</h3>
+            <p>Мы следим за тем, чтобы процесс первоначальной регистрации требовал абсолютного минимума данных (часто только электронной почты). Вся адаптация упрощена, фокусируясь только на одном действии, необходимом для первого успеха.
+            </p>
+
+            <h3>Стратегия "Лимит Использования, А Не Лимит Функций"</h3>
+            <p>Вместо блокировки функций мы ограничиваем объем (например, 5 проектов или 100 контактов). Это позволяет пользователю ощутить всю мощь программного обеспечения, но вынуждает к обновлению только тогда, когда его успех требует более высокой пропускной способности использования.
+            </p>     `
+    }
+};
+
 const slider = document.getElementById('articleSlider');
 const prevBtnArticle = document.getElementById('prevBtnArticle');
 const nextBtnArticle = document.getElementById('nextBtnArticle');
@@ -562,10 +578,11 @@ const articleModal = document.getElementById('articleModal');
 const closeArticleModalBtn = document.getElementById('closeArticleModal');
 const articleContent = document.getElementById('articleContent');
 const dotsContainer = document.getElementById('sliderDots');
-if (slider && dotsContainer) {
+
 const cardCount = document.querySelectorAll('.article-card').length;
 const isArticleMobile = window.innerWidth <= 768;
 const dotsCount = isArticleMobile ? cardCount : cardCount - 2;
+
 for (let i = 0; i < dotsCount; i++) {
     const dot = document.createElement('div');
     dot.className = 'dot';
@@ -612,70 +629,60 @@ function scrollToCard(index) {
 
 slider.addEventListener('scroll', updateDots);
 
-if (prevBtnArticle) {
-    prevBtnArticle.addEventListener('click', () => {
-        const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
-        const scrollLeft = slider.scrollLeft;
-        const currentIndex = Math.round(scrollLeft / cardWidth);
-        
-        if (currentIndex === 0) {
-            scrollToCard(cardCount - 1);
-        } else {
-            slider.scrollBy({ left: -500, behavior: 'smooth' });
-        }
-    });
-}
+prevBtn.addEventListener('click', () => {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const scrollLeft = slider.scrollLeft;
+    const currentIndex = Math.round(scrollLeft / cardWidth);
+    
+    if (currentIndex === 0) {
+        scrollToCard(cardCount - 1);
+    } else {
+        slider.scrollBy({ left: -500, behavior: 'smooth' });
+    }
+});
 
-if (nextBtnArticle) {
-    nextBtnArticle.addEventListener('click', () => {
-        const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
-        const scrollLeft = slider.scrollLeft;
-        const maxScroll = slider.scrollWidth - slider.clientWidth;
-        
-        if (scrollLeft >= maxScroll - 10) {
-            slider.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-            slider.scrollBy({ left: 500, behavior: 'smooth' });
-        }
-    });
-}
+nextBtn.addEventListener('click', () => {
+    const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
+    const scrollLeft = slider.scrollLeft;
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    
+    if (scrollLeft >= maxScroll - 10) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+        slider.scrollBy({ left: 500, behavior: 'smooth' });
+    }
+});
 
 document.querySelectorAll('.article-card').forEach(card => {
     card.addEventListener('click', () => {
         const articleId = card.getAttribute('data-article');
         const article = articles[articleId];
         
-        if (article && articleContent && articleModal) {
-            articleContent.innerHTML = `
-                <h2>${article.title}</h2>
-                ${article.content}
-            `;
-            
-            articleModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        articleContent.innerHTML = `
+            <h2>${article.title}</h2>
+            ${article.content}
+        `;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
     });
 });
 
-if (closeArticleModalBtn) {
-    closeArticleModalBtn.addEventListener('click', () => {
-        articleModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-}
+closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
 
-if (articleModal) {
-    articleModal.addEventListener('click', (e) => {
-        if (e.target === articleModal) {
-            articleModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
-}
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
 
 document.addEventListener('keydown', (e) => {
-    if (articleModal && articleModal.classList.contains('active') && e.key === 'Escape') {
-        articleModal.classList.remove('active');
+    if (modal.classList.contains('active') && e.key === 'Escape') {
+        modal.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
 });
@@ -715,7 +722,10 @@ function handleSwipe() {
             }
         }
     }
-}}
+}
+
+
+
 // ======================== FAQ TOGGLE ========================
 function toggleFaq(element) {
 const faqItem = element.parentElement;
