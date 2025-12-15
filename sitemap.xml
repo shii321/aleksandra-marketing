@@ -93,5 +93,86 @@
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>
     </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aleksandra.marketing/ru/ai.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/strategy.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/content.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/web.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/seo.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/google.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/target.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/mail.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/network.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/e-commerce.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aleksandra.marketing/ru/crm.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://aleksandra.marketing/ru/bonus.html</loc>
+        <lastmod>2025-08-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
 
 </urlset>
