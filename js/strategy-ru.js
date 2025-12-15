@@ -571,11 +571,12 @@ const articles = {
     }
 };
 
+
 const slider = document.getElementById('articleSlider');
 const prevBtnArticle = document.getElementById('prevBtnArticle');
 const nextBtnArticle = document.getElementById('nextBtnArticle');
-const articleModal = document.getElementById('articleModal');
-const closeArticleModalBtn = document.getElementById('closeArticleModal');
+const modal = document.getElementById('articleModal');
+const closeModalBtn = document.getElementById('closeArticleModal');
 const articleContent = document.getElementById('articleContent');
 const dotsContainer = document.getElementById('sliderDots');
 
@@ -629,7 +630,7 @@ function scrollToCard(index) {
 
 slider.addEventListener('scroll', updateDots);
 
-prevBtn.addEventListener('click', () => {
+prevBtnArticle.addEventListener('click', () => {
     const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
     const scrollLeft = slider.scrollLeft;
     const currentIndex = Math.round(scrollLeft / cardWidth);
@@ -641,7 +642,7 @@ prevBtn.addEventListener('click', () => {
     }
 });
 
-nextBtn.addEventListener('click', () => {
+nextBtnArticle.addEventListener('click', () => {
     const cardWidth = slider.querySelector('.article-card').offsetWidth + 30;
     const scrollLeft = slider.scrollLeft;
     const maxScroll = slider.scrollWidth - slider.clientWidth;
