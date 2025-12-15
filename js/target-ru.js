@@ -235,91 +235,91 @@
         // ======================== ARTICLE SLIDER ========================
 const articles = {
     1: {
-        title: "Neuro-Targeting",
+        title: "Нейротаргетинг",
         content: `
-            <p>Standard retargeting is transactional; emotional retargeting is relational. We use behavioral cues like repeated visits without conversion or deep dives into complex content to infer the user's emotional state (confusion, hesitation, or trust issues) and serve ads that validate and solve that specific feeling.
+            <p>Стандартный ретаргетинг носит транзакционный характер; эмоциональный ретаргетинг — межличностный. Мы используем поведенческие сигналы, такие как повторные посещения без конверсии или глубокое погружение в сложный контент, чтобы определить эмоциональное состояние пользователя (замешательство, нерешительность или проблемы с доверием) и показывать рекламу, которая подтверждает и решает это конкретное чувство.
             </p>
 
-            <h3>Mapping Friction Points to Emotional States</h3>
-            <p>We define specific on-site actions (e.g., repeatedly clicking "Shipping Costs," or viewing the refund policy multiple times) and match them to psychological states like 'Anxiety' or 'Risk Aversion' for precision targeting.
+            <h3>Картирование Точек Трения на Эмоциональные Состояния</h3>
+            <p>Мы определяем конкретные действия на сайте (например, многократные клики по "Стоимость доставки" или просмотр политики возврата несколько раз) и сопоставляем их с психологическими состояниями, такими как "Тревога" или "Избегание Риска", для точного таргетинга.
             </p>
             
-            <h3>The 'Acknowledge the Pain' Creative</h3>
-            <p>Ad copy is specifically designed to open with a recognition of the user's likely pain point. This radical honesty builds instant rapport and trust, unlike generic sales pitches.
+            <h3>Креатив "Признание Боли"</h3>
+            <p>Рекламный текст специально разработан так, чтобы начинаться с признания вероятной болевой точки пользователя. Эта радикальная честность мгновенно вызывает доверие и взаимопонимание, в отличие от общих коммерческих предложений.
              `
     },
     2: {
-        title: "Profit Policing",
+        title: "Контроль Прибыльности (Profit Policing)",
         content: `
-            <h3>Churn Pattern Recognition</h3>
-            <p>We feed historical data on canceled subscriptions or high-return purchasers into the ad platform's machine learning model to find the common source traits.
+            <h3>Распознавание Моделей Оттока</h3>
+            <p>Мы загружаем исторические данные об отмененных подписках или покупателях с высоким процентом возвратов в модель машинного обучения рекламной платформы, чтобы найти общие черты источника.
             </p>
 
-            <h3>The 'Support Sink' Audience Exclusion</h3>
-            <p>Users who demonstrate excessive interaction with FAQ and support sections, but have not converted, are added to a temporary exclusion list, diverting budget to users exhibiting smoother, high-intent behavior.
+            <h3>Исключение Аудитории 'Пожирателей Поддержки'</h3>
+            <p>Пользователи, которые демонстрируют чрезмерное взаимодействие с разделами часто задаваемых вопросов (FAQ) и поддержки, но не совершили конверсию, добавляются во временный список исключения, перенаправляя бюджет на пользователей, демонстрирующих более плавное поведение с высоким намерением.
             </p>
 
-            <h3>LTV Threshold Exclusion</h3>
-            <p>We stop targeting lookalike audiences derived from initial purchasers and instead focus on LTV Lookalikes. Any audience that historically falls below the minimum viable LTV threshold is immediately deprioritized or excluded entirely.
+            <h3>Исключение по Порогу LTV</h3>
+            <p>Мы прекращаем таргетинг на похожие аудитории, полученные от первоначальных покупателей, и вместо этого фокусируемся на похожих аудиториях по LTV (пожизненной ценности). Любая аудитория, которая исторически опускается ниже минимально допустимого порога LTV, немедленно понижается в приоритете или полностью исключается.
             </p>   `
     },
     3: {
-        title: "Proximity Marketing",
+        title: "Проксимити-Маркетинг (Proximity Marketing)",
         content: `
-            <h3>Custom Audience Build for Event Lookalikes</h3>
-            <p>Prior to the event, we identify common characteristics (job titles, interests) of past attendees to build a highly qualified lookalike audience that can be used before, during, and after the physical event.
+            <h3>Создание Пользовательской Аудитории для Похожих Участников Мероприятий</h3>
+            <p>До мероприятия мы выявляем общие характеристики (должности, интересы) прошлых посетителей, чтобы создать высококвалифицированную похожую аудиторию, которую можно использовать до, во время и после физического мероприятия.
             </p>
 
-            <h3>Real-Time Ad Deployment During Peak Hours</h3>
-            <p>Ads are scheduled to run only during the event's prime operating hours (e.g., 9 AM to 5 PM) and served with urgency-based copy, ensuring the budget is spent when the target is most likely to be active and receptive.
+            <h3>Развертывание Рекламы в Реальном Времени в Часы Пиковой Активности</h3>
+            <p>Реклама планируется к показу только в часы основного проведения мероприятия (например, с 9:00 до 17:00) и сопровождается текстом, основанным на срочности, гарантируя, что бюджет будет потрачен, когда цель, скорее всего, будет активной и восприимчивой.
             </p>
 
-            <h3>Sequential Follow-Up Strategy</h3>
-            <p>After the event, the targeted users receive a follow-up ad that directly references the event. This hyper-personal touch bypasses competitor noise.
+            <h3>Стратегия Последовательного Дальнейшего Контакта</h3>
+            <p>После мероприятия целевые пользователи получают последующую рекламу, которая прямо ссылается на событие. Этот гиперперсональный подход обходит информационный шум конкурентов.
             </p>  `
     },
     4: {
-        title: "Strategy for Infinite Creative Scaling",
+        title: "Стратегия для Бесконечного Масштабирования Креатива",
         content: `
-            <h3>Implementing the Three-Pillar Creative Cycle</h3>
-            <p>We categorize creative assets into three core pillars (Product-Focused, Testimonial/Social Proof, and Educational/Value) and rotate budget allocation between these pillars weekly to ensure messaging diversity.
+            <h3>Внедрение Творческого Цикла "Трех Столпов"</h3>
+            <p>Мы классифицируем креативные материалы по трем основным столпам (Ориентированные на продукт, Отзывы/Социальное доказательство и Образовательные/Ценностные) и еженедельно ротируем распределение бюджета между этими столпами, чтобы обеспечить разнообразие сообщений.
             </p>
 
-            <h3>Frequency-Based Automation Rules</h3>
-            <p>Automation rules are set up to pause any ad set where the 7-day frequency exceeds a specific threshold (e.g., 3.0) and automatically activate a predefined backup ad set with completely new creative assets and copy.
+            <h3>Правила Автоматизации на Основе Частоты</h3>
+            <p>Правила автоматизации настроены на приостановку любого набора объявлений, где 7-дневная частота превышает определенный порог (например, 3.0), и автоматическую активацию заранее определенного резервного набора объявлений с совершенно новыми креативными материалами и текстом.
             </p>
 
-            <h3>Rapid Iteration of Low-Performing Variables</h3>
-            <p>Instead of scrapping an entire ad, we only swap out the lowest-performing variable (e.g., the headline or the image color) and re-test the new combination. This focused iteration minimizes creative production time while maximizing performance gains.
+            <h3>Быстрая Итерация Низкоэффективных Переменных</h3>
+            <p>Вместо того чтобы полностью отказываться от рекламы, мы заменяем только самую низкоэффективную переменную (например, заголовок или цвет изображения) и повторно тестируем новую комбинацию. Эта сфокусированная итерация минимизирует время на создание креативов, одновременно максимизируя прирост производительности.
             </p>   `
     }
     ,
     5: {
-        title: "Beyond the Feed",
+        title: "За Пределами Ленты (Beyond the Feed)",
         content: `
-            <h3>Personalized Link Generation for Tracking</h3>
-            <p>We implement a system where shared links are automatically tied back to the initial referrer or the specific channel, allowing us to build precise retargeting segments based on the quality and source of the referral traffic.
+            <h3>Персонализированная Генерация Ссылок для Отслеживания</h3>
+            <p>Мы внедряем систему, в которой общие ссылки автоматически привязываются к первоначальному рефереру или конкретному каналу, что позволяет нам создавать точные сегменты ретаргетинга на основе качества и источника реферального трафика.
             </p>
 
-            <h3>High-Trust Creative for Referred Audiences</h3>
-            <p>Retargeting ads served to the Dark Social segment use creative that speaks to the shared trust, capitalising on the established recommendation.
+            <h3>Креатив Высокого Доверия для Реферальных Аудиторий</h3>
+            <p>Рекламные объявления для ретаргетинга, показываемые сегменту "Темного Социального" трафика, используют креатив, который говорит об общем доверии, извлекая выгоду из установленной рекомендации.
             </p>
 
-            <h3>The 'Referral Loop' Activation</h3>
-            <p>By identifying high-volume private sharers, we activate a specific campaign to incentivize them to convert, thereby turning organic private sharing into a predictable, measurable paid acquisition channel.
+            <h3>Активация 'Реферального Цикла'</h3>
+            <p>Выявляя пользователей, которые делятся контентом в большом объеме через личные каналы, мы активируем специальную кампанию, чтобы стимулировать их к конверсии, тем самым превращая органический частный обмен в предсказуемый, измеримый платный канал привлечения.
             </p>  `
     },
     6: {
-        title: "Optimizing Bids to Match the User’s Heat Level",
+        title: "Оптимизация Ставок в Соответствии с Уровнем Интереса Пользователя",
         content: `
-            <h3>Micro-Window Conversion Events</h3>
-            <p>We define specific, short timeframes and set up high-priority bid rules solely for users who triggered the high-intent event within that window, using aggressive copy and unique offers.
+            <h3>События Конверсии в Микро-Окне</h3>
+            <p>Мы определяем конкретные, короткие временные рамки и настраиваем правила ставок с высоким приоритетом исключительно для пользователей, которые вызвали событие с высоким намерением в течение этого окна, используя агрессивный текст и уникальные предложения.
             </p>
-            <h3>Tiered Bidding for Intent Scores</h3>
-            <p>Users are categorized into "Hot," "Warm," and "Cold" segments based on their recency and depth of interaction. Bids are highest for the "Hot" segment and gradually decrease as the user moves into the "Cold" category.
+            <h3>Многоуровневое Назначение Ставок для Оценок Намерения</h3>
+            <p>Пользователи делятся на сегменты "Горячий", "Теплый" и "Холодный" в зависимости от их недавней активности и глубины взаимодействия. Ставки являются самыми высокими для "Горячего" сегмента и постепенно снижаются по мере того, как пользователь переходит в категорию "Холодный".
             </p>
-            <h3>Failing the User Forward</h3>
-            <p>If a user repeatedly enters a "Hot" segment but never converts, they are automatically moved to a different nurturing campaign focused on educational content, preventing budget waste on a perpetual hesitating browser.
+            <h3>Перенаправление Пользователя (Failing the User Forward)</h3>
+            <p>Если пользователь неоднократно попадает в "Горячий" сегмент, но никогда не совершает конверсию, он автоматически перемещается в другую кампанию по взращиванию лидов, сосредоточенную на образовательном контенте, предотвращая трату бюджета на постоянно нерешительного "браузера".
             </p>   `
     }
 };
