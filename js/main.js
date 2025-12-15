@@ -1104,10 +1104,10 @@ const articles = {
     }
 };
 
-const slider = document.getElementById('articleSlider');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const modal = document.getElementById('articleModal');
+const prevBtnArticle = document.getElementById('prevBtnArticle');
+const nextBtnArticle = document.getElementById('nextBtnArticle');
+const articleModal = document.getElementById('articleModal');
+const closeArticleModalBtn = document.getElementById('closeArticleModal');
 const closeModalBtn = document.getElementById('closeModal');
 const articleContent = document.getElementById('articleContent');
 const dotsContainer = document.getElementById('sliderDots');
