@@ -1,4 +1,4 @@
-// ======================== MOBILE MENU FUNCTIONS ========================
+
 function toggleMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     const overlay = document.querySelector('.mobile-overlay');
