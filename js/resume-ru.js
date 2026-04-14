@@ -1,113 +1,6 @@
 // ============================================
 // ДАННЫЕ КЕЙСОВ - КОММЕРЧЕСКИЕ ПРОЕКТЫ
 // ============================================
-// ============================================
-// СЛАЙДЕР ФОТОГРАФИЙ В HERO
-// ============================================
-
-function initPhotoSlider() {
-    const slides = document.querySelectorAll('.slide-photo');
-    const prevBtn = document.getElementById('photoPrev');
-    const nextBtn = document.getElementById('photoNext');
-    const dotsContainer = document.getElementById('photoDots');
-    
-    if (slides.length === 0) return;
-    
-    let currentSlide = 0;
-    const totalSlides = slides.length;
-    
-    // Создаем точки-индикаторы
-    for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'slider-dot';
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(i));
-        dotsContainer.appendChild(dot);
-    }
-    
-    const dots = document.querySelectorAll('.slider-dot');
-    
-    // Показать первый слайд
-    slides[0].classList.add('active');
-    
-    // Функция перехода к слайду
-    function goToSlide(index) {
-        // Убрать active со всех слайдов и точек
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        // Добавить active к нужному слайду и точке
-        currentSlide = index;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-    
-    // Следующий слайд
-    function nextSlide() {
-        const next = (currentSlide + 1) % totalSlides;
-        goToSlide(next);
-    }
-    
-    // Предыдущий слайд
-    function prevSlide() {
-        const prev = (currentSlide - 1 + totalSlides) % totalSlides;
-        goToSlide(prev);
-    }
-    
-    // События для кнопок
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    
-    // Автоматическая прокрутка каждые 4 секунды
-    let autoPlayInterval = setInterval(nextSlide, 4000);
-    
-    // Остановить автопрокрутку при наведении
-    const sliderWrapper = document.querySelector('.photo-slider-wrapper');
-    if (sliderWrapper) {
-        sliderWrapper.addEventListener('mouseenter', () => {
-            clearInterval(autoPlayInterval);
-        });
-        
-        sliderWrapper.addEventListener('mouseleave', () => {
-            autoPlayInterval = setInterval(nextSlide, 4000);
-        });
-    }
-    
-    // Свайпы для мобильных
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
-    if (sliderWrapper) {
-        sliderWrapper.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-        
-        sliderWrapper.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-    }
-    
-    function handleSwipe() {
-        const swipeDistance = touchStartX - touchEndX;
-        
-        if (Math.abs(swipeDistance) > 50) {
-            if (swipeDistance > 0) {
-                // Свайп влево - следующий слайд
-                nextSlide();
-            } else {
-                // Свайп вправо - предыдущий слайд
-                prevSlide();
-            }
-        }
-    }
-    
-    // Клавиатурная навигация
-    document.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft') prevSlide();
-        if (e.key === 'ArrowRight') nextSlide();
-    });
-}
 
 const commercialCases = [
     {
@@ -483,7 +376,6 @@ function toggleFaq(element) {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Рендерим кейсы
-    initPhotoSlider();
     renderCases(commercialCases, 'commercialCasesContainer');
     renderCases(freelanceCases, 'freelanceCasesContainer');
     
