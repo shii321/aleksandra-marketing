@@ -663,16 +663,19 @@ function initButtons() {
     
     if (btn1) {
         btn1.addEventListener('click', () => {
-            window.location.href = 'https://wa.me/66823207917';
+            window.location.href = 'https://wa.me/66657528471';
         });
     }
     
     if (btn2) {
-        btn2.addEventListener('click', () => {
-            // Здесь можно добавить скачивание PDF резюме
-            alert('Функция скачивания резюме в разработке!');
-        });
-    }
+    btn2.addEventListener('click', () => {
+        // Создаем временную ссылку для скачивания
+        const link = document.createElement('a');
+        link.href = 'Резюме.pdf';
+        link.download = 'Aleksandra_Marketing_Resume.pdf'; // Имя файла при скачивании
+        link.click();
+    });
+}
     
     if (btn3 && errorMessage) {
         btn3.addEventListener('click', () => {
