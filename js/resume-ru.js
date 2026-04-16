@@ -557,6 +557,7 @@ function initButtons() {
         link.href = 'https://aleksandra.marketing/files/resume-en.pdf';
         link.download = 'Aleksandra_Marketing_Resume.pdf'; // Имя файла при скачивании
         link.click();
+        window.open(pdfUrl, '_blank');
     });
 }
     
