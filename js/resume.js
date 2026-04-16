@@ -671,7 +671,7 @@ function initButtons() {
     btn2.addEventListener('click', () => {
         // Создаем временную ссылку для скачивания
         const link = document.createElement('a');
-        link.href = 'Резюме.pdf';
+        link.href = '/files/Резюме.pdf';
         link.download = 'Aleksandra_Marketing_Resume.pdf'; // Имя файла при скачивании
         link.click();
     });
